@@ -1,0 +1,52 @@
+.plan-item
+  $this: &
+
+  display: block
+  border-radius: 12px
+  background-color: $white
+  padding: rem(20)
+
+  +tr(background-color .3s, color .3s)
+
+  +hover
+    background-color: $accent
+    color: $white
+
+    #{$this}__btn
+      max-height: rem(59)
+
+  &__title-wrap
+    margin-bottom: rem(8)
+    display: block
+
+  &__list
+    margin-bottom: rem(20)
+    display: block
+
+  &__title
+    @extend .price
+    display: block
+
+  &__price
+    display: block
+    margin-bottom: rem(20)
+
+  &__btn
+    display: block
+    max-height: 0
+    overflow: hidden
+
+    +tr(max-height .3s)
+
+.plan-list
+  &__item
+    display: flex
+    align-items: center
+
+    +notlast
+      margin-bottom: rem(10)
+
+    .icon
+      font-size: .7em
+      fill: $accent-aux
+      margin-right: .7em

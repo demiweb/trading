@@ -1,0 +1,90 @@
+.s-features
+  background-color: $light
+  padding-top: rem(125)
+  padding-bottom: rem(115)
+
+.s-imgs
+  padding-top: rem(121)
+  padding-bottom: rem(60)
+
+  &__inner
+    display: flex
+    align-items: center
+    margin-bottom: rem(122)
+
+  &__left
+    width: 50%
+
+  &__right
+    width: 50%
+    margin-right: rem(-70)
+
+  &__text
+    max-width: 468px
+
+  &__imgs-block
+    right: rem(-70)
+
+.s-join
+  padding-top: rem(60)
+  padding-bottom: rem(126)
+
+  &__text
+    max-width: 948px
+    margin: 0 auto
+    text-align: center
+    color: $c-text-aux
+
+.s-crypto
+  &__right
+    position: absolute
+    z-index: 1
+    top: 0
+    bottom: 0
+    right: 0
+
+    width: percentage(852 / 1600)
+
+    // background-color: $light
+    +image('Rectangle_215.jpg')
+    background-repeat: no-repeat
+    background-position: 0 100%
+    background-size: 100% auto
+
+  &__left
+    position: relative
+    padding-top: rem(130)
+    padding-bottom: rem(171)
+    color: $white
+
+    +before
+      // background-color: $accent
+      +image('Rectangle_236.jpg')
+      background-repeat: no-repeat
+      background-position: 0 100%
+      background-size: 100% auto
+
+      width: percentage((1600 - 852) / 1600)
+      position: absolute
+      top: 0
+      bottom: rem(55)
+      left: 0
+      z-index: 0
+
+  &__content
+    position: relative
+    z-index: 1
+    max-width: percentage(5 / 12)
+
+  &__btn
+    margin-bottom: rem(80)
+
+.s-chart
+  padding-top: rem(53)
+  padding-bottom: rem(40)
+
+.s-plans
+  padding-top: rem(40)
+  padding-bottom: rem(40)
+
+  

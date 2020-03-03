@@ -1,0 +1,21 @@
+{%set
+blocks = [
+  { img: 'image_27.png' },
+  { img: 'image_19.png' },
+  { img: 'image_70.png' },
+  { img: 'image_26.png' },
+  { img: 'image_28.png' },
+  { img: 'image_29.png' },
+  { img: 'Rectangle_233.png' }
+]
+%}
+
+<!-- begin imgs-block -->
+<div class="imgs-block s-imgs__imgs-block">
+  {% for i in blocks %}
+  <div class="imgs-block__item imgs-item">
+    <img class="js-lazy" alt="" src="" data-src="./img/img-block/{{ i.img }}"/>
+  </div>
+  {% endfor %}
+</div>
+<!-- end imgs-block -->

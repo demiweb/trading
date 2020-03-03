@@ -1,6 +1,7 @@
 html  
   font-size: $base-fz + px
-  line-height: 1.4
+  line-height: 1.65
+  font-weight: 300
   color: $c-text
   +reg
   +sm
@@ -20,4 +21,36 @@ body
   $this: &
   &--loaded:not(#{$this}--no-fade-in)
     animation: fadeIn 1s
+
+.container
+  width: 100%
+  max-width: 1170px
+
+  padding-left: 1rem
+  padding-right: 1rem
+
+  margin: 0 auto
+
+
+.hr
+  border: 0
+  background-color: transparent
+  border-top: 1px solid  rgba($black, .1)
+
+.amount
+  &__title
+    font-weight: 700
+    font-size: em(30)
+    line-height: 1
+    margin-bottom: rem(10)
+
+  &__text
+    text-decoration: underline
+    color: rgba(255, 255, 255, 0.7)
+    opacity: 0.5
+
+.price
+  font-size: em(42)
+  font-weight: 600
+  line-height: 1.2
     

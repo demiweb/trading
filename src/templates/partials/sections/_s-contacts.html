@@ -1,0 +1,45 @@
+{%set
+form = {
+  fields: [
+    {
+      name: 'input',
+      type: 'text',
+      placeholder: 'Name',
+      label: {}
+    },
+    {
+      name: 'input',
+      type: 'email',
+      placeholder: 'Email',
+      label: {}
+    },
+    {
+      name: 'input',
+      type: 'tel',
+      placeholder: 'Phone number',
+      label: {}
+    }
+  ]
+}
+%}
+
+<!-- begin section -->
+<section class="section s-contacts">
+  <div class="container">
+    <div class="s-contacts__left">
+      <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
+
+      <ol class="section-list">
+        <li class="section-list__item">Create an account</li>
+        <li class="section-list__item">Choose your strategy</li>
+        <li class="section-list__item">Trade with 100 times more experienced than competitors and friends.</li>
+      </ol>
+    </div>
+
+    <div class="s-contacts__right">
+      <h3 class="section__title title title--h3">Contact us</h3>
+      {% include "partials/_form.html" %}
+    </div>
+  </div>
+</section>
+<!-- end section -->

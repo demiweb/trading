@@ -1,0 +1,54 @@
+.features
+  display: flex
+  align-items: center
+
+  &__left
+    width: percentage(514 / 1134)
+
+  &__right
+    width: percentage((1134 - 514) / 1134)
+    padding-left: rem(80)
+
+  &__content
+    max-width: 516px
+
+  &__block
+    +notlast
+      margin-bottom: rem(40)
+
+.feature
+  background-color: $white
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  position: relative
+  padding: rem(30)
+  padding-left: rem(120)
+
+  &__icon
+    position: absolute
+    z-index: 1
+    top: rem(30)
+    left: rem(30)
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    color: $white
+    width: 1em
+    height: 1em
+    font-size: rem(70)
+
+    background-color: $accent
+    border-radius: 50%
+
+    .icon
+      font-size: rem(35)
+
+  &__title
+    margin-bottom: rem(26)
+    a
+      text-decoration: underline
+
+  &__text
+    color: $c-text-aux

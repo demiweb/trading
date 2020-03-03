@@ -1,5 +1,34 @@
 <!-- begin header -->
-<header class="header">
-  hello from header
+<header class="header{% if header.mod %} {{ header.mod }}{% endif %}">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo logo">
+        <img class="js-lazy" alt="" src="" data-src="./img/logo.svg"/>
+      </a>
+
+      {{ mixins.list(
+        name = 'nav',
+        hasWrap = true,
+        modifications = { wrap: 'header__nav', item: 'nav__item', link: 'nav__link' },
+        list = [
+          { link: 'Sevice' },
+          { link: 'About' },
+          { link: 'Contacts' },
+          { link: 'FAQ' }
+        ]
+      ) }}
+
+      <div class="header__btn">
+        {{ mixins.btn(
+          title = 'Sign up for Free',
+          mod = 'btn--transp'
+        ) }}
+      </div>
+
+      <div class="header__burger">
+        {{ mixins.icon('arrow') }}
+      </div>
+    </div>
+  </div>
 </header>
 <!-- end header -->

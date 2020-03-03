@@ -1,0 +1,26 @@
+<a href="#" class="plans__item plan-item">
+  <span class="plan-item__title-wrap">
+    <span class="plan-item__title">{{ i.title | safe }}</span>
+    {% if i.subttl %}
+    <span class="plan-item__subttl">{{ i.subttl | safe }}</span>
+    {% endif %}
+  </span>
+
+  {{ mixins.list(
+    name = 'plan-list',
+    modifications = { wrap: '', list: 'plan-item__list plan-list', item: 'plan-list__item', link: '' },
+    list = i.list
+  ) }}
+
+  <span class="plan-item__price price">{{ i.price | safe }}</span>
+
+  <span class="plan-item__btn">
+    {{ mixins.btn(
+      title = 'Sign up',
+      mod = 'btn--full btn--no-hover',
+      href = false,
+      isInline = true
+    ) }}
+  </span>
+</a>
+      

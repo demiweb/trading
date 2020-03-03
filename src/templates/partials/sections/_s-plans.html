@@ -1,0 +1,64 @@
+{%set
+plans = [
+  {
+    title: 'Free',
+    subttl: '(1 week trial)',
+    list: [
+      { item: mixins.icon('check') + '1 portfolio to follow ' },
+      { item: mixins.icon('check') + 'Overall limit $100' },
+      { item: mixins.icon('check') + 'API trading ' },
+      { item: mixins.icon('check') + 'No customization' }
+    ],
+    price: '0$'
+  },
+  {
+    title: 'Starter',
+    subttl: '',
+    list: [
+      { item: mixins.icon('check') + '1 portfolio to follow ' },
+      { item: mixins.icon('check') + 'Overall limit $1000' },
+      { item: mixins.icon('check') + 'API trading ' },
+      { item: mixins.icon('check') + 'Set-up risk level' }
+    ],
+    price: '50$'
+  },
+  {
+    title: '',
+    subttl: '',
+    list: [
+      { item: mixins.icon('check') + '3 portfolio to follow ' },
+      { item: mixins.icon('check') + 'Overall limit $5000' },
+      { item: mixins.icon('check') + 'API trading ' },
+      { item: mixins.icon('check') + 'Set-up risk level' }
+    ],
+    price: '70$'
+  },
+  {
+    title: '',
+    subttl: '',
+    list: [
+      { item: mixins.icon('check') + '1 portfolio to follow ' },
+      { item: mixins.icon('check') + 'Unlimited' },
+      { item: mixins.icon('check') + 'API trading ' },
+      { item: mixins.icon('check') + 'Full customization' }
+    ],
+    price: '100$'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section s-plans">
+  <div class="container container--md">
+    <h2 class="section__title section__title--mb-md title title--h2">Choose the best plan and start <br> making profit already today.</h2>
+
+    <!-- begin plans -->
+    <div class="plans">
+      {% for i in plans %}
+        {% include "partials/_plan-item.html" %}
+      {% endfor %}
+    </div>
+    <!-- end plans -->
+  </div>
+</section>
+<!-- end section -->

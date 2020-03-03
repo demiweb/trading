@@ -1,0 +1,21 @@
+---
+title: Home
+page: home
+header: {
+  mod: 'header--transp'
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-what.html" %}
+  {% include "partials/sections/_s-imgs.html" %}
+  {% include "partials/sections/_s-join.html" %}
+  {% include "partials/sections/_s-crypto.html" %}
+  {% include "partials/sections/_s-chart.html" %}
+  {% include "partials/sections/_s-plans.html" %}
+  {% include "partials/sections/_s-about-slider.html" %}
+  {% include "partials/sections/_s-faq.html" %}
+  {% include "partials/sections/_s-contacts.html" %}
+{% endblock %}

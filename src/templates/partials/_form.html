@@ -1,0 +1,23 @@
+<form class="form">
+  {% for i in form.fields %}
+  <div class="form__field">
+    {{ mixins.input(
+      name = i.name,
+      mod = i.mod,
+      type = i.type,
+      placeholder = i.placeholder,
+      value = '',
+      fieldClass = '',
+      label = i.label
+    ) }}
+  </div>
+  {% endfor %}
+
+  <div class="from__field form__btn">
+    {{ mixins.btn(
+      title = 'Submit',
+      mod = 'btn--full',
+      href = false
+    ) }}
+  </div>
+</form>

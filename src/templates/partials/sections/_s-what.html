@@ -1,0 +1,64 @@
+{%set
+blocks = [
+  {
+    icon: 'automation-1',
+    title: 'Trust',
+    text: 'Algo trading bots are always faster and secure than any other trader. The possibility to choose different portfolios gives you the best trading opportunities and control your risks.'
+  },
+  {
+    icon: 'fingerprint-1',
+    title: 'Automated',
+    text: 'You’ll never need to send us your funds. All trading deals will be covered by API.'
+  },
+  {
+    icon: 'contract-1',
+    title: 'Stable',
+    text: 'All strategies are cared for by automatic algo trading bots with custom risk management that you can set up.'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section s-features">
+  <div class="container">
+    <!-- begin features -->
+    <div class="features">
+      <div class="features__left">
+        {% for i in blocks %}
+        <div class="features__block feature">
+          <div class="feature__icon">
+            {{ mixins.icon(i.icon) }}
+          </div>
+
+          <div class="feature__content">
+            <h3 class="feature__title title title--h3">
+              <a href="#">{{ i.title | safe }}</a>
+            </h3>
+
+            <div class="feature__text">{{ i.text | safe }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="features__right">
+        <div class="features__content">
+          <h2 class="section__title title title--h2">What is Tokkia</h2>
+
+          <div class="section__text">
+            <p>We created an investment tool to manage your assets with algo trading portfolios. All funds are secured on your account. Our algorithms are created and tested by professional traders, all historical data are open and prove our transparency.</p>
+
+            <p>One of the main advantages is multi-stage risk management: algorithm calculates combination of different strategies, currencies, time diversification, stop loss orders. This combination gives us stable profit and quality risk-management.</p>
+          </div>
+
+          {{ mixins.btn(
+            title = 'Sign up for Free',
+            mod = ''
+          ) }}
+        </div>
+      </div>
+    </div>
+    <!-- end features -->
+  </div>
+</section>
+<!-- end section -->

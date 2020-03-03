@@ -1,0 +1,49 @@
+{%set
+blocks = [
+  {
+    icon: 'portfolio-1',
+    text: 'Choose the most relevant portfolio.'
+  },
+  {
+    icon: 'investment-1',
+    text: 'Register on exchange, set up Risk & Margin level.'
+  },
+  {
+    icon: 'api-1',
+    text: 'All trades will be copied on your account via API key.'
+  },
+  {
+    icon: 'bars-1',
+    text: 'Watch statistics and check for your profit.'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section s-join">
+  <div class="container">
+    <h2 class="section__title section__title--mb-lg title title--h2">Join Tokkia</h2>
+
+    <!-- begin join-blocks -->
+    <div class="section__block join-blocks">
+      {% for i in blocks %}
+      <div class="join-blocks__block">
+        <a href="#" class="join-block">
+          {{ mixins.icon(i.icon, 'join-block__icon') }}
+
+          <span class="join-block__text">
+            <span class="join-block__text-in">{{ i.text | safe }}</span>
+            <span class="join-block__nmb">0{{ loop.index }}</span>
+          </span>
+
+          
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- end join-blocks -->
+
+    <div class="section__text s-join__text">Crypto trading are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how crypto trading work, and whether you can afford to take the high risk of losing your money.</div>
+  </div>
+</section>
+<!-- end section -->

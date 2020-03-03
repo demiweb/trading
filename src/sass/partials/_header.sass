@@ -1,0 +1,31 @@
+.header
+  background-color: $accent
+  color: $white
+
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  z-index: 10
+
+  &__logo
+    width: rem(181)
+    margin-right: rem(174)
+    margin-left: rem(-60)
+
+  &__inner
+    display: flex
+    align-items: center
+
+    height: $header-height
+
+  &__nav
+    flex-grow: 1
+
+  &__burger
+    +lgmin
+      display: none
+
+  &--transp
+    background-color: transparent
+

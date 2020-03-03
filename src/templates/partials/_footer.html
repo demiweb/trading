@@ -1,5 +1,37 @@
 <!-- begin footer -->
 <footer class="footer">
-  hello from footer
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <a href="/" class="footer__logo">Tokkia</a>
+        <div class="footer__copy">© 2020</div>
+      </div>
+
+      <div class="footer__right">
+        {{ mixins.list(
+          name = 'nav',
+          hasWrap = true,
+          modifications = { wrap: 'nav--footer footer__nav', item: 'nav__item', link: 'nav__link' },
+          list = [
+            { link: 'Sevice' },
+            { link: 'About' },
+            { link: 'Contacts' },
+            { link: 'FAQ' }
+          ]
+        ) }}
+
+        {{ mixins.list(
+          name = 'social',
+          modifications = { wrap: '', list: 'footer__social social', item: 'social__item', link: 'social__link' },
+          list = [
+            { link: mixins.icon('facebook') },
+            { link: mixins.icon('twitter') },
+            { link: mixins.icon('instagram') }
+          ]
+        ) }}
+      </div>
+    </div>
+    
+  </div>
 </footer>
 <!-- end footer -->

@@ -1,8 +1,21 @@
-small
-  font-size: inherit
+// small
+//   font-size: inherit
 
-h1, h2, h3, h4, h5, h6
-  font-weight: 400
+// h1, h2, h3, h4, h5, h6
+//   font-weight: 400
 
 .title
-  +css-lock(21, 45, 320, 1399, font-size)
+  // +css-lock(21, 45, 320, 1399, font-size)
+  display: block
+  font-weight: 700  
+  line-height: 1.3
+
+  &--h1
+    font-size: em(60)
+
+  &--h2
+    font-size: em(36)
+    font-weight: 400
+
+  &--h3
+    font-size: em(24)
