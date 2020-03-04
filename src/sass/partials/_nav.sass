@@ -1,6 +1,22 @@
 .nav
+  $this: &
+
   font-size: em(16)
+
   &__item
     display: inline-block
     +notlast
       margin-right: rem(77)
+
+  &--footer
+    #{$this}__list
+      display: flex
+      flex-wrap: wrap
+
+    #{$this}__item
+      margin-right: 0 !important
+      width: 50%
+      margin-bottom: rem(10)
+
+    #{$this}__link
+      text-decoration: underline

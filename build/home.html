@@ -21,7 +21,7 @@
             </a>
             <!-- begin nav -->
             <nav class="nav header__nav">
-              <ul>
+              <ul class="nav__list">
                 <li class="nav__item "><a href="#" class="nav__link ">Sevice</a></li>
                 <li class="nav__item "><a href="#" class="nav__link ">About</a></li>
                 <li class="nav__item "><a href="#" class="nav__link ">Contacts</a></li>
@@ -55,17 +55,19 @@
               <div class="hero__controls">arrows</div>
             </div>
           </div>
-          <div class="hero__laptop">
-            <img class="js-lazy" alt="" src="" data-src="./img/commp1.png" />
+          <div class="hero__laptop hero-laptop">
+            <img class="hero-laptop__bg js-lazy" alt="" src="" data-src="./img/commp1.png" />
+            <img class="hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg" />
           </div>
           <img class="hero__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_51.png" />
+          <img class="hero__bottom-circle js-lazy" alt="" src="" data-src="./img/Group_10.svg" />
         </section>
         <!-- end hero -->
         <!-- begin section -->
         <section class="section s-features">
           <div class="container">
             <!-- begin features -->
-            <div class="features">
+            <div class="s-features__features features">
               <div class="features__left">
                 <div class="features__block feature">
                   <div class="feature__icon">
@@ -153,6 +155,7 @@
             </div>
             <!-- end features -->
           </div>
+          <img class="s-features__bottom-img js-lazy" alt="" src="" data-src="./img/Group_55.svg" />
         </section>
         <!-- end section -->
         <!-- begin section -->
@@ -186,7 +189,7 @@
                     <img class="js-lazy" alt="" src="" data-src="./img/img-block/image_29.png" />
                   </div>
                   <div class="imgs-block__item imgs-item">
-                    <img class="js-lazy" alt="" src="" data-src="./img/img-block/Rectangle_233.png" />
+                    <img class="js-lazy" alt="" src="" data-src="./img/img-block/Rectangle_233.jpg" />
                   </div>
                 </div>
                 <!-- end imgs-block -->
@@ -400,12 +403,14 @@
                 </div>
               </div>
             </div>
+            <img class="s-crypto__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg" />
           </div>
           <div class="s-crypto__right"></div>
         </section>
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-chart">
+          <img class="s-chart__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_235.svg" />
           <div class="container container--md">
             <h2 class="section__title section__title--mb-lg title title--h2">Our trading results</h2>
             <!-- begin chart -->
@@ -545,7 +550,7 @@
         </section>
         <!-- end section -->
         <!-- begin section -->
-        <section class="section">
+        <section class="section s-about">
           <div class="container container--md">
             <h2 class="section__title section__title--md title title--h2">Media about us</h2>
             <!-- begin slider -->
@@ -602,6 +607,18 @@
                   </div>
                 </div>
               </div>
+              <div class="slider__controls">
+                <button class="slider__prev prev js-slider-prev">
+                  <svg width="0.480em" height="1em" viewBox="0 0 12 25" class="icon icon--arr">
+                    <path d="M1 24l10-11.508L1 1" />
+                  </svg>
+                </button>
+                <button class="slider__next next js-slider-next">
+                  <svg width="0.480em" height="1em" viewBox="0 0 12 25" class="icon icon--arr">
+                    <path d="M1 24l10-11.508L1 1" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <!-- end slider -->
           </div>
@@ -609,24 +626,26 @@
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-faq">
+          <img class="s-faq__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_238.svg" />
+          <img class="s-faq__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_237.svg" />
           <div class="container">
             <h2 class="section__title title title--h2">F.A.Q</h2>
             <!-- begin faq -->
             <ul class="faq js-accordion">
               <li class="faq__item faq-question">
-                <button class="faq-question__title">How Tokkia works?</button>
+                <button class="faq-question__title title title--h4">How Tokkia works?</button>
                 <div class="faq-question__content">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
               </li>
               <li class="faq__item faq-question">
-                <button class="faq-question__title">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
+                <button class="faq-question__title title title--h4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
                 <div class="faq-question__content">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
               </li>
               <li class="faq__item faq-question">
-                <button class="faq-question__title">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
+                <button class="faq-question__title title title--h4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
                 <div class="faq-question__content">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
               </li>
               <li class="faq__item faq-question faq-question--link">
-                <a href="#" class="faq-question__title">All questions</a>
+                <a href="#" class="faq-question__title title title--h4">All questions</a>
               </li>
             </ul>
             <!-- end faq -->
@@ -635,43 +654,60 @@
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-contacts">
+          <img class="s-contacts__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg" />
           <div class="container">
-            <div class="s-contacts__left">
-              <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
-              <ol class="section-list">
-                <li class="section-list__item">Create an account</li>
-                <li class="section-list__item">Choose your strategy</li>
-                <li class="section-list__item">Trade with 100 times more experienced than competitors and friends.</li>
-              </ol>
-            </div>
-            <div class="s-contacts__right">
-              <h3 class="section__title title title--h3">Contact us</h3>
-              <form class="form">
-                <div class="form__field">
-                  <!-- begin input -->
-                  <div class="input">
-                    <input type="text" placeholder="Name">
-                  </div>
-                  <!-- end input -->
+            <div class="s-contacts__inner">
+              <div class="s-contacts__left">
+                <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
+                <ol class="section-list">
+                  <li class="section-list__item">
+                    <svg width="1.000em" height="1em" viewBox="0 0 5 5" class="icon icon--ellipse">
+                      <circle cx="2.5" cy="2.5" r="2.5" />
+                    </svg> Create an account</li>
+                  <li class="section-list__item">
+                    <svg width="0.333em" height="1em" viewBox="0 0 5 15" class="icon icon--ellipse-2">
+                      <circle cx="2.5" cy="12.5" r="2.5" />
+                      <circle cx="2.5" cy="2.5" r="2.5" />
+                    </svg> Choose your strategy</li>
+                  <li class="section-list__item">
+                    <svg width="1.000em" height="1em" viewBox="0 0 15 15" class="icon icon--ellipse-3">
+                      <circle cx="2.5" cy="12.5" r="2.5" />
+                      <circle cx="2.5" cy="2.5" r="2.5" />
+                      <circle cx="12.5" cy="12.5" r="2.5" />
+                    </svg> Trade with 100 times more experienced than competitors and friends.</li>
+                </ol>
+              </div>
+              <div class="s-contacts__right">
+                <div class="s-contacts__form">
+                  <h3 class="section__title section__title--mb-md title title--h3">Contact us</h3>
+                  <form class="form">
+                    <div class="form__field">
+                      <!-- begin input -->
+                      <div class="input">
+                        <input type="text" placeholder="Name">
+                      </div>
+                      <!-- end input -->
+                    </div>
+                    <div class="form__field">
+                      <!-- begin input -->
+                      <div class="input">
+                        <input type="email" placeholder="Email">
+                      </div>
+                      <!-- end input -->
+                    </div>
+                    <div class="form__field">
+                      <!-- begin input -->
+                      <div class="input">
+                        <input type="tel" placeholder="Phone number">
+                      </div>
+                      <!-- end input -->
+                    </div>
+                    <div class="from__field form__btn">
+                      <button class="btn btn--full">Submit</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="form__field">
-                  <!-- begin input -->
-                  <div class="input">
-                    <input type="email" placeholder="Email">
-                  </div>
-                  <!-- end input -->
-                </div>
-                <div class="form__field">
-                  <!-- begin input -->
-                  <div class="input">
-                    <input type="tel" placeholder="Phone number">
-                  </div>
-                  <!-- end input -->
-                </div>
-                <div class="from__field form__btn">
-                  <button class="btn btn--full">Submit</button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </section>
@@ -689,7 +725,7 @@
             <div class="footer__right">
               <!-- begin nav -->
               <nav class="nav nav--footer footer__nav">
-                <ul>
+                <ul class="nav__list">
                   <li class="nav__item "><a href="#" class="nav__link ">Sevice</a></li>
                   <li class="nav__item "><a href="#" class="nav__link ">About</a></li>
                   <li class="nav__item "><a href="#" class="nav__link ">Contacts</a></li>

@@ -1,5 +1,6 @@
 {%set
 form = {
+  mod: '',
   fields: [
     {
       name: 'input',
@@ -25,20 +26,25 @@ form = {
 
 <!-- begin section -->
 <section class="section s-contacts">
+  <img class="s-contacts__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg"/>
   <div class="container">
-    <div class="s-contacts__left">
-      <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
+    <div class="s-contacts__inner">
+      <div class="s-contacts__left">
+        <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
 
-      <ol class="section-list">
-        <li class="section-list__item">Create an account</li>
-        <li class="section-list__item">Choose your strategy</li>
-        <li class="section-list__item">Trade with 100 times more experienced than competitors and friends.</li>
-      </ol>
-    </div>
+        <ol class="section-list">
+          <li class="section-list__item">{{ mixins.icon('ellipse') }}Create an account</li>
+          <li class="section-list__item">{{ mixins.icon('ellipse-2') }}Choose your strategy</li>
+          <li class="section-list__item">{{ mixins.icon('ellipse-3') }}Trade with 100 times more experienced than competitors and friends.</li>
+        </ol>
+      </div>
 
-    <div class="s-contacts__right">
-      <h3 class="section__title title title--h3">Contact us</h3>
-      {% include "partials/_form.html" %}
+      <div class="s-contacts__right">
+        <div class="s-contacts__form">
+          <h3 class="section__title section__title--mb-md title title--h3">Contact us</h3>
+          {% include "partials/_form.html" %}
+        </div>        
+      </div>
     </div>
   </div>
 </section>

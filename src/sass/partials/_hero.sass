@@ -1,16 +1,19 @@
 .hero
   background-color: $accent
-  background-image: $gradient
+  +image('bg-hero.jpg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
   color: $white
   position: relative
 
-  > .container
-    position: relative
-    z-index: 1
+  
 
   &__slide
     padding-top: rem(190)
     padding-bottom: rem(126)
+    position: relative
+    z-index: 3
 
   &__title
     margin-bottom: rem(20)
@@ -33,3 +36,16 @@
     left: 0
     width: 100%
     z-index: 0
+
+  &__bottom-circle
+    position: absolute
+    bottom: rem(-200)
+    left: 0
+    z-index: 1
+
+.hero-laptop
+  &__slide
+    position: absolute
+    top: 7%
+    right: 0
+    z-index: 1

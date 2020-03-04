@@ -1,0 +1,35 @@
+.faq
+  &__item
+    border-bottom: 1px solid currentColor
+    &:first-child
+      border-top: 1px solid currentColor
+
+.faq-question  
+  position: relative
+
+  +before
+    +icon-arrow(.8, .8, .07, currentColor, -45, em)
+    position: absolute
+    top: rem(20)
+    right: rem(20)
+    z-index: 1
+
+  &__title
+    display: block
+    width: 100%
+    text-align: left
+
+    padding-top: rem(20)
+    padding-bottom: rem(20)
+    padding-left: rem(20)
+    padding-right: rem(100)
+
+  &__content
+    padding-left: rem(20)
+    padding-right: rem(100)
+
+  &--link
+    +before
+      +rotate(225)
+      top: rem(24)
+

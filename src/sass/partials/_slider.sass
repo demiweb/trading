@@ -1,0 +1,30 @@
+.prev, .next
+  display: flex
+  align-items: center
+  justify-content: center
+
+  color: #DADADA
+  border-radius: 50%
+  border: 1px solid currentColor
+
+  width: 1em
+  height: 1em
+  font-size: rem(40)
+
+  +tr(box-shadow .3s, border-color .3s, color .3s)
+
+  +hover
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+    border-color: transparent
+    color: $black
+
+  .icon
+    font-size: rem(28)
+    fill: none
+    stroke: currentColor
+    margin-left: .1em
+
+.prev
+  transform: scaleX(-1)
+
+.slider

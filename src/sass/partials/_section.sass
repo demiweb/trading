@@ -18,3 +18,24 @@
 
   &__block
     margin-bottom: rem(50)
+
+.section-list
+  list-style-type: decimal
+  list-style-position: inside
+
+  &__item
+    position: relative
+    padding-left: rem(25)
+
+    +notlast
+      margin-bottom: rem(50)
+      
+    .icon
+      font-size: .8em
+      fill: $accent
+      position: absolute
+      top: .5rem
+      left: 0
+
+      &--ellipse
+        font-size: em(5)

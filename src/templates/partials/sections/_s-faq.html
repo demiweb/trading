@@ -17,6 +17,9 @@ questions = [
 
 <!-- begin section -->
 <section class="section s-faq">
+  <img class="s-faq__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_238.svg"/>
+  <img class="s-faq__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_237.svg"/>
+
   <div class="container">
     <h2 class="section__title title title--h2">F.A.Q</h2>
 
@@ -24,12 +27,12 @@ questions = [
     <ul class="faq js-accordion">
       {% for i in questions %}
       <li class="faq__item faq-question">
-        <button class="faq-question__title">{{ i.title | safe }}</button>
+        <button class="faq-question__title title title--h4">{{ i.title | safe }}</button>
         <div class="faq-question__content">{{ i.text | safe }}</div>
       </li>
       {% endfor %}
       <li class="faq__item faq-question faq-question--link">
-        <a href="#" class="faq-question__title">All questions</a>
+        <a href="#" class="faq-question__title title title--h4">All questions</a>
       </li>
     </ul>
     <!-- end faq -->

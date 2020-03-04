@@ -1,4 +1,4 @@
-<form class="form">
+<form class="form{% if form.mod %} {{ form.mod }}{% endif %}">
   {% for i in form.fields %}
   <div class="form__field">
     {{ mixins.input(

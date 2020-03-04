@@ -2,6 +2,17 @@
   background-color: $light
   padding-top: rem(125)
   padding-bottom: rem(115)
+  position: relative
+
+  &__features
+    position: relative
+    z-index: 2
+
+  &__bottom-img
+    position: absolute
+    z-index: 0
+    right: 0
+    bottom: rem(60)
 
 .s-imgs
   padding-top: rem(121)
@@ -29,6 +40,10 @@
   padding-top: rem(60)
   padding-bottom: rem(126)
 
+  > .container
+    position: relative
+    z-index: 1
+
   &__text
     max-width: 948px
     margin: 0 auto
@@ -36,9 +51,11 @@
     color: $c-text-aux
 
 .s-crypto
+  position: relative
+
   &__right
     position: absolute
-    z-index: 1
+    z-index: 2
     top: 0
     bottom: 0
     right: 0
@@ -79,12 +96,98 @@
   &__btn
     margin-bottom: rem(80)
 
+  &__top-img
+    position: absolute
+    z-index: 1
+    left: 0
+    top: rem(-100)
+
 .s-chart
   padding-top: rem(53)
   padding-bottom: rem(40)
+  position: relative
+
+  &__top-img
+    position: absolute
+    z-index: 0
+    top: rem(-200)
+    left: 0
 
 .s-plans
   padding-top: rem(40)
   padding-bottom: rem(40)
 
+.s-about
+  padding-top: rem(40)
+  padding-bottom: rem(79)
+
+.s-faq
+  padding-top: rem(120)
+  padding-bottom: rem(120)
+  background-color: $light
+  position: relative
+
+  > .container
+    position: relative
+    z-index: 1
+
+  &__bottom-img, &__top-img
+    position: absolute
+    z-index: 0
+
+  &__bottom-img
+    bottom: rem(-100)
+    right: 0
+  &__top-img
+    top: rem(140)
+    left: 0
+
+.s-contacts  
+  overflow: hidden
+  position: relative
+
+  &__inner
+    display: flex
+    position: relative
+    z-index: 1
+
+  &__left, &__right
+    padding-top: rem(200)
+    padding-bottom: rem(192)
+
+  &__left
+    width: percentage(5 / 12)    
+    padding-right: rem(100)
+
+
+  &__right
+    width: percentage(7 / 12)    
+    color: $white
+    position: relative
+
+    +before
+      position: absolute
+      z-index: 0
+      top: 0
+      bottom: 0
+      left: 0
+      width: 70vw 
+
+      background-color: $accent
+      +image('Group_55.jpg')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: cover
+
+  &__form
+    max-width: 527px
+    margin-left: auto
+    position: relative
+    z-index: 1
+
+  &__top-img
+    position: absolute
+    z-index: 0
+    top: rem(-30)
+    left: 0
   
