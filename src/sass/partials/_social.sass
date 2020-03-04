@@ -3,6 +3,10 @@
     display: inline-block
     +notlast
       margin-right: rem(20)
+      +lg
+        margin-right: rem(10)
+      +sm
+        margin-right: rem(4, 14)
 
   &__link
     display: flex
@@ -16,5 +20,12 @@
     height: 1em
     font-size: rem(45)
 
+    +lg
+      font-size: rem(30)
+    +sm
+      font-size: rem(21, 14)
+
     .icon
       font-size: rem(18)
+      +lg
+        font-size: rem(10)

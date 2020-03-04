@@ -5,15 +5,18 @@
   background-position: 50% 50%
   background-size: cover
   color: $white
-  position: relative
-
-  
+  position: relative  
 
   &__slide
     padding-top: rem(190)
     padding-bottom: rem(126)
     position: relative
     z-index: 3
+
+    +xs
+      padding-top: rem(60, 14)
+      padding-bottom: rem(250, 14)
+
 
   &__title
     margin-bottom: rem(20)
@@ -29,6 +32,12 @@
     bottom: 0
     right: 0
     z-index: 1
+    width: 42%
+
+    +sm
+      width: 50%
+    +xs
+      width: 55%
 
   &__bottom-img
     position: absolute
@@ -42,10 +51,14 @@
     bottom: rem(-200)
     left: 0
     z-index: 1
+    +md
+      display: none
 
 .hero-laptop
+  text-align: right
   &__slide
     position: absolute
     top: 7%
     right: 0
     z-index: 1
+    max-width: 81.5%

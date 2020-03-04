@@ -6,17 +6,19 @@
         <img class="js-lazy" alt="" src="" data-src="./img/logo.svg"/>
       </a>
 
-      {{ mixins.list(
-        name = 'nav',
-        hasWrap = true,
-        modifications = { wrap: 'header__nav', list: 'nav__list', item: 'nav__item', link: 'nav__link' },
-        list = [
-          { link: 'Sevice' },
-          { link: 'About' },
-          { link: 'Contacts' },
-          { link: 'FAQ' }
-        ]
-      ) }}
+      <nav class="header__nav nav">
+        <div class="nav__btns">          
+          <a href="#" class="header__sign-up">{{ mixins.icon('sign-up') }}</a>
+          <button class="header__close close js-menu-close"></button>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Sevice</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+        </ul>
+      </nav>
 
       <div class="header__btn">
         {{ mixins.btn(

@@ -29,7 +29,9 @@ blocks = [
       {% for i in blocks %}
       <div class="join-blocks__block">
         <a href="#" class="join-block">
-          {{ mixins.icon(i.icon, 'join-block__icon') }}
+          <span class="join-block__icon">
+            {{ mixins.icon(i.icon) }}
+          </span>          
 
           <span class="join-block__text">
             <span class="join-block__text-in">{{ i.text | safe }}</span>

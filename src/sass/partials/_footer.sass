@@ -4,9 +4,18 @@
   padding-top: rem(65)
   padding-bottom: rem(166)
 
+  +lg
+    padding-top: rem(20)
+    padding-bottom: rem(20)
+  +sm
+    padding-top: rem(10, 14)
+    padding-bottom: rem(10, 14)
+
   &__inner
     display: flex
     justify-content: space-between
+    +lg
+      align-items: center
 
   &__right
     display: flex
@@ -15,12 +24,16 @@
     @extend .title
     @extend .title--h2
     margin-bottom: rem(18)
+    +sm
+      margin-bottom: rem(3, 14)
 
   &__copy
     font-size: em(16)
 
   &__nav
     min-width: 350px
+    +lg
+      display: none
 
   &--sm
     padding-top: rem(20)

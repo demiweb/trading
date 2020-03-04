@@ -31,15 +31,22 @@ body
 
   margin: 0 auto
 
+  +xs
+    padding-left: rem(10, 14)
+    padding-right: rem(10, 14)
+
   &--md
     max-width: 1030px
 
 .out
   padding-top: $header-height
+  +lg
+    padding-top: $header-height-lg
 
 
 .hr
   border: 0
+  margin: 0
   background-color: transparent
   border-top: 1px solid  rgba($black, .1)
 
@@ -59,4 +66,8 @@ body
   font-size: em(42)
   font-weight: 600
   line-height: 1.2
+
+.close
+  +icon-close(1rem, 1px, currentColor)
+  display: block
     

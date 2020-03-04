@@ -4,6 +4,14 @@
   padding-bottom: rem(115)
   position: relative
 
+  +lg
+    padding-top: rem(90)
+    padding-bottom: rem(90)
+
+  +sm
+    padding-top: rem(40, 14)
+    padding-bottom: rem(58, 14)
+
   &__features
     position: relative
     z-index: 2
@@ -18,27 +26,64 @@
   padding-top: rem(121)
   padding-bottom: rem(60)
 
+  +md
+    padding-top: rem(80)
+    padding-bottom: rem(50)
+
+  +sm
+    padding-top: rem(10, 14)
+    padding-bottom: rem(50, 14)
+
   &__inner
     display: flex
+    flex-wrap: wrap
     align-items: center
     margin-bottom: rem(122)
+    +sm
+      margin-bottom: 0
 
   &__left
     width: 50%
+    padding-right: 1rem
+    +sm
+      width: 100%
+      padding-right: 0
+      margin-bottom: rem(34, 14)
 
   &__right
     width: 50%
-    margin-right: rem(-70)
+    +sm
+      width: 100%
 
   &__text
     max-width: 468px
 
   &__imgs-block
     right: rem(-70)
+    +xxl
+      right: auto
+
+  &__btn
+    +sm
+      display: none
+
+  &__btn-mob
+    text-align: center
+    margin-top: rem(50, 14)
+    +smmin
+      display: none
+
+  &__hr
+    +sm
+      display: none
 
 .s-join
   padding-top: rem(60)
   padding-bottom: rem(126)
+
+  +sm
+    padding-top: rem(50, 14)
+    padding-bottom: rem(60, 14)
 
   > .container
     position: relative
@@ -49,6 +94,8 @@
     margin: 0 auto
     text-align: center
     color: $c-text-aux
+    +xs
+      text-align: left
 
 .s-crypto
   position: relative
@@ -68,14 +115,54 @@
     background-position: 0 100%
     background-size: 100% auto
 
+    +before
+      position: absolute
+      z-index: 0
+      left: 0
+      top: 0
+      width: 100%
+      height: 80%
+      background-color: $light
+      +sm
+        top: rem(-100)
+
+    +sm
+      position: relative
+      padding-top: 50%
+      top: auto
+      bottom: auto
+      right: auto
+      left: auto
+      width: 100%
+
   &__left
     position: relative
+    z-index: 3
     padding-top: rem(130)
     padding-bottom: rem(171)
     color: $white
 
+    > .container
+      position: relative
+      z-index: 2
+
+    +sm
+      padding-top: rem(44, 14)
+      padding-bottom: rem(44, 14)
+
+
     +before
-      // background-color: $accent
+      position: absolute
+      z-index: 0
+      left: 0
+      top: 0
+      width: percentage((1600 - 852) / 1600)
+      height: 80%
+      background-color: #016be4
+      +sm
+        width: 100%
+
+    +after
       +image('Rectangle_236.jpg')
       background-repeat: no-repeat
       background-position: 0 100%
@@ -84,23 +171,38 @@
       width: percentage((1600 - 852) / 1600)
       position: absolute
       top: 0
-      bottom: rem(55)
+      bottom: 7%
       left: 0
       z-index: 0
+      +sm
+        bottom: 0
+        width: 100%
 
   &__content
     position: relative
     z-index: 1
     max-width: percentage(5 / 12)
 
+    +sm
+      max-width: 320px
+
   &__btn
     margin-bottom: rem(80)
+    +lg
+      margin-bottom: rem(60)
+    +md
+      margin-bottom: rem(40)
+    +xs
+      margin-bottom: rem(10, 14)
 
   &__top-img
     position: absolute
     z-index: 1
     left: 0
     top: rem(-100)
+    +md
+      top: 0
+      width: 30vw
 
 .s-chart
   padding-top: rem(53)
@@ -112,6 +214,9 @@
     z-index: 0
     top: rem(-200)
     left: 0
+
+    +md
+      display: none
 
 .s-plans
   padding-top: rem(40)
@@ -131,6 +236,18 @@
     position: relative
     z-index: 1
 
+  +lg
+    padding-top: rem(90)
+    padding-bottom: rem(90)
+
+  +md
+    padding-top: rem(70)
+    padding-bottom: rem(70)
+
+  +sm
+    padding-top: rem(26, 14)
+    padding-bottom: rem(79, 14)
+
   &__bottom-img, &__top-img
     position: absolute
     z-index: 0
@@ -138,17 +255,28 @@
   &__bottom-img
     bottom: rem(-100)
     right: 0
+    +md
+      display: none
   &__top-img
     top: rem(140)
     left: 0
+    +md
+      display: none
 
 .s-faq-full
   padding-top: rem(59)
   padding-bottom: rem(75)
 
+  +sm
+    padding-top: rem(28, 14)
+    padding-bottom: rem(67, 14)
+
   &__title-block
     max-width: 515px
     margin-bottom: rem(90)
+
+    +md
+      margin-bottom: rem(25)
 
 .s-contacts  
   overflow: hidden
@@ -156,8 +284,12 @@
 
   &__inner
     display: flex
+
     position: relative
     z-index: 1
+
+    +sm
+      display: block
 
   &__left, &__right
     padding-top: rem(200)
@@ -166,12 +298,34 @@
   &__left
     width: percentage(5 / 12)    
     padding-right: rem(100)
-
+    +lg
+      padding-right: 1rem
+    +sm
+      width: auto
+      padding-top: rem(24, 14)
+      padding-bottom: rem(60, 14)
 
   &__right
-    width: percentage(7 / 12)    
+    width: percentage(7 / 12)
+    padding-left: 1rem
     color: $white
     position: relative
+
+    +sm
+      width: auto
+      padding-top: rem(50, 14)
+      padding-bottom: rem(41, 14)
+      padding-right: 1rem
+
+      margin-left: -1rem
+      margin-right: -1rem
+
+    +xs
+      margin-left: rem(-10, 14)
+      margin-right: rem(-10, 14)
+
+      padding-right: rem(10, 14)
+      padding-right: rem(10, 14)
 
     +before
       position: absolute
@@ -187,6 +341,11 @@
       background-position: 50% 50%
       background-size: cover
 
+      +sm
+        width: auto
+        right: 0
+        background-position: 0 0
+
   &__form
     max-width: 527px
     margin-left: auto
@@ -196,6 +355,9 @@
   &__top-img
     position: absolute
     z-index: 0
-    top: rem(-30)
+    top: 0
     left: 0
+
+    +md
+      width: 30vw
   

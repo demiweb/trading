@@ -12,6 +12,13 @@
     width: rem(181)
     margin-right: rem(174)
     margin-left: rem(-60)
+    +xl
+      margin-left: 0
+    +lg
+      width: rem(100)
+      margin-right: 0
+    +sm
+      width: rem(65, 14)
 
   &__inner
     display: flex
@@ -19,12 +26,35 @@
 
     height: $header-height
 
+    +lg
+      height: $header-height-lg
+
   &__nav
     flex-grow: 1
+    +lg
+      padding: rem(24) rem(10) rem(54)
+      background-color: $black
+      width: percentage(160 / 320)
+      position: absolute
+      z-index: 10
+      top: 0
+      right: 0
+      transform: translate(100%, 0)
+      +ready
+        +tr(transform .5s $easeOutQuart)
 
-  &__burger
+  &__btn
+    +lg
+      display: none
+
+  &__burger, &__close, &__sign-up
     +lgmin
       display: none
+
+  &__burger
+    margin-left: auto
+
+
 
   &--transp
     background-color: transparent

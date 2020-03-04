@@ -3,10 +3,31 @@
 
   font-size: em(16)
 
+  +sm
+    font-size: 1em
+
+  &__btns
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    margin-bottom: rem(10)
+
   &__item
     display: inline-block
     +notlast
       margin-right: rem(77)
+      +lg
+        margin-right: 0
+    +lg
+      display: block
+
+  &__link
+    +lg
+      display: block
+      padding: rem(7) 0
+      border-bottom: 1px solid rgba($white, .2)
+
 
   &--footer
     #{$this}__list

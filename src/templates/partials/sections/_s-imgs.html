@@ -9,16 +9,23 @@
 
         {{ mixins.btn(
           title = 'Sign up for Free',
-          mod = ''
+          mod = 's-imgs__btn'
         ) }}
       </div>
 
       <div class="s-imgs__right">
         {% include "partials/_imgs-block.html" %}
+
+        <div class="s-imgs__btn-mob">
+          {{ mixins.btn(
+            title = 'Sign up for Free',
+            mod = ''
+          ) }}
+        </div>
       </div>
     </div>
 
-    <hr class="hr">
+    <hr class="s-imgs__hr hr">
   </div>
 </section>
 <!-- end section -->

@@ -1,13 +1,29 @@
 .features
   display: flex
+  flex-wrap: wrap
   align-items: center
 
   &__left
     width: percentage(514 / 1134)
+    +lg
+      width: 50%
+      padding-right: 1rem
+    +md
+      width: 100%
+      padding-right: 0
+      order: 1
 
   &__right
     width: percentage((1134 - 514) / 1134)
     padding-left: rem(80)
+    +lg
+      width: 50%
+      padding-left: 1rem
+    +md
+      width: 100%
+      padding-left: 0
+      order: 0
+      margin-bottom: rem(32)
 
   &__content
     max-width: 516px
@@ -15,6 +31,18 @@
   &__block
     +notlast
       margin-bottom: rem(40)
+      +xs
+        margin-bottom: rem(10, 14)
+
+
+  &__btn
+    +md
+      display: none
+  &__btn-mob
+    text-align: center
+    margin-top: rem(30, 14)
+    +mdmin
+      display: none
 
 .feature
   background-color: $white
@@ -23,6 +51,9 @@
   position: relative
   padding: rem(30)
   padding-left: rem(120)
+
+  +xs
+    padding: rem(20, 14)
 
   &__icon
     position: absolute
@@ -42,13 +73,30 @@
     background-color: $accent
     border-radius: 50%
 
+    +xs
+      font-size: rem(30, 14)
+      position: static
+      margin-right: rem(9, 14)
+
     .icon
       font-size: rem(35)
+      +xs
+        font-size: rem(18, 14)
 
-  &__title
-    margin-bottom: rem(26)
+  &__title    
     a
       text-decoration: underline
+
+    +xs
+      margin-bottom: 0
+
+  &__title-wrap
+    margin-bottom: rem(26)
+    +md
+      margin-bottom: rem(15)
+    +xs
+      display: flex
+      align-items: center
 
   &__text
     color: $c-text-aux

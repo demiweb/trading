@@ -1,12 +1,34 @@
 .join-blocks
   display: flex
+  flex-wrap: wrap
   margin-left: -1rem
   margin-right: -1rem
+
+  +lg
+    margin-left: -.5rem
+    margin-right: -.5rem
+
+  +xs
+    margin-left: rem(-5, 14)
+    margin-right: rem(-5, 14)
 
   &__block
     width: 25%
     padding-left: 1rem
     padding-right: 1rem
+
+    +lg
+      padding-left: .5rem
+      padding-right: .5rem
+      margin-bottom: 1rem
+
+    +sm
+      width: 50%
+
+    +xs
+      padding-left: rem(5, 14)
+      padding-right: rem(5, 14)
+      margin-bottom: rem(10, 14)
 
 .join-block
   --bg-color: #fafafa
@@ -20,16 +42,45 @@
 
   +tr(background-color .3s, box-shadow .3s)
 
+  +lg
+    padding: rem(20)
+
+  +sm
+    pading: rem(20, 14) rem(6, 14)
+
+  +xs
+    text-align: center
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1)
+
   &:hover
     --bg-color: #{$white}
 
     box-shadow: 0px 4px 20px rgba(31, 31, 31, 0.1)
 
   &__icon
-    font-size: rem(70)
+    color: $accent
     margin-bottom: rem(17)
     display: block
-    fill: $accent
+    +xs
+      width: rem(50, 14)
+      height: rem(50, 14)
+      border-radius: 50%
+
+      display: flex
+      align-items: center
+      justify-content: center
+
+      background-color: $accent
+      color: $white
+
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: rem(16, 14)
+
+    .icon
+      font-size: rem(70)
+      +xs
+        font-size: rem(30, 14)
 
   &__text
     color: $c-text-aux
@@ -47,6 +98,10 @@
       background-image: linear-gradient(to top, #fafafa, rgba(#fafafa, .6))
       background-image: linear-gradient(to top, var(--bg-color), rgba(#fafafa, .6))
 
+    +xs
+      +before
+        display: none
+
   &__text-in
     position: relative
     z-index: 1
@@ -63,3 +118,6 @@
     font-weight: 700
     -webkit-text-fill-color: transparent
     -webkit-text-stroke: 2px currentColor
+
+    +xs
+      display: none

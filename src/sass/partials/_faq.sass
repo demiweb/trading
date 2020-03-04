@@ -13,6 +13,15 @@
     top: rem(20)
     right: rem(20)
     z-index: 1
+  
+  &__title, &__content
+    padding-left: rem(20)
+    padding-right: rem(100)
+    +sm
+      padding-left: rem(10, 14)
+      padding-right: rem(80, 14)
+    +xs
+      padding-left: rem(5, 14)
 
   &__title
     display: block
@@ -21,12 +30,9 @@
 
     padding-top: rem(20)
     padding-bottom: rem(20)
-    padding-left: rem(20)
-    padding-right: rem(100)
 
   &__content
-    padding-left: rem(20)
-    padding-right: rem(100)
+    
 
   &--link
     +before
