@@ -8,6 +8,8 @@
   top: 0
   z-index: 10
 
+  +tr(background-color .3s)
+
   &__logo
     width: rem(181)
     margin-right: rem(174)
@@ -43,6 +45,9 @@
       +ready
         +tr(transform .5s $easeOutQuart)
 
+      &--open
+        transform: translate(0, 0)
+
   &__btn
     +lg
       display: none
@@ -51,7 +56,13 @@
     +lgmin
       display: none
 
+  &__sign-up
+    +tr(color .3s)
+    +hover
+      color: $accent-aux
+
   &__burger
+    display: block
     margin-left: auto
 
 
@@ -59,3 +70,6 @@
   &--transp
     background-color: transparent
 
+  &--has-background
+    background-color: $accent
+  

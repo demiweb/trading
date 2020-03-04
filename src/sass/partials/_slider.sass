@@ -28,3 +28,21 @@
   transform: scaleX(-1)
 
 .slider
+  &__wrap
+    position: relative
+    *
+      box-sizing: border-box
+
+  &--items
+    &__wrap
+      .swiper-container
+        padding: 1rem
+        margin-left: -1rem
+        margin-right: -1rem
+
+      .slider
+        &__controls
+          // position: absolute
+          // z-index: 1
+          // top: 50%
+          // transform: translate(0, -50%)

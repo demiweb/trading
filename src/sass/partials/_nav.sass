@@ -22,11 +22,17 @@
     +lg
       display: block
 
+    &--current
+      text-decoration: underline
+
   &__link
     +lg
       display: block
       padding: rem(7) 0
       border-bottom: 1px solid rgba($white, .2)
+
+    +hover
+      @extend #{$this}__item--current
 
 
   &--footer

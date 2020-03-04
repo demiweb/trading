@@ -1,6 +1,7 @@
 {%set
 plans = [
   {
+    mod: 'swiper-slide',
     title: 'Free',
     subttl: '(1 week trial)',
     list: [
@@ -12,6 +13,7 @@ plans = [
     price: '0$'
   },
   {
+    mod: 'swiper-slide',
     title: 'Starter',
     subttl: '',
     list: [
@@ -23,7 +25,8 @@ plans = [
     price: '50$'
   },
   {
-    title: '',
+    mod: 'swiper-slide',
+    title: 'Pro',
     subttl: '',
     list: [
       { item: mixins.icon('check') + '3 portfolio to follow ' },
@@ -34,7 +37,8 @@ plans = [
     price: '70$'
   },
   {
-    title: '',
+    mod: 'swiper-slide',
+    title: 'Unlim',
     subttl: '',
     list: [
       { item: mixins.icon('check') + '1 portfolio to follow ' },
@@ -52,13 +56,18 @@ plans = [
   <div class="container container--md">
     <h2 class="section__title section__title--mb-md title title--h2">Choose the best plan and start <br> making profit already today.</h2>
 
-    <!-- begin plans -->
-    <div class="plans">
-      {% for i in plans %}
-        {% include "partials/_plan-item.html" %}
-      {% endfor %}
+    <!-- begin slider -->
+    <div class="slider__wrap slider--plans__wrap">
+      <div class="swiper-container js-slider" data-slider="plans">
+        <div class="swiper-wrapper slider slider--plans plans">
+          {% for i in plans %}
+          {% include "partials/_plan-item.html" %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
-    <!-- end plans -->
+    <!-- end slider -->
+
   </div>
 </section>
 <!-- end section -->

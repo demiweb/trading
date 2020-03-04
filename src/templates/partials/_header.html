@@ -6,14 +6,14 @@
         <img class="js-lazy" alt="" src="" data-src="./img/logo.svg"/>
       </a>
 
-      <nav class="header__nav nav">
+      <nav class="header__nav nav js-menu">
         <div class="nav__btns">          
           <a href="#" class="header__sign-up">{{ mixins.icon('sign-up') }}</a>
           <button class="header__close close js-menu-close"></button>
         </div>
 
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Sevice</a></li>
+          <li class="nav__item nav__item--current"><a href="#" class="nav__link">Sevice</a></li>
           <li class="nav__item"><a href="#" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
           <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
@@ -27,9 +27,9 @@
         ) }}
       </div>
 
-      <div class="header__burger">
+      <button class="header__burger burger js-burger">
         {{ mixins.icon('arrow') }}
-      </div>
+      </button>
     </div>
   </div>
 </header>

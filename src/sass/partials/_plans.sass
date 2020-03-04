@@ -1,7 +1,16 @@
+.plans
+  display: flex
+  &__item
+    width: 25%
+    height: auto
+
+
 .plan-item
   $this: &
 
-  display: block
+  display: flex
+  flex-direction: column
+
   border-radius: 12px
   background-color: $white
   padding: rem(20)
@@ -12,16 +21,31 @@
     background-color: $accent
     color: $white
 
+    +before
+      display: none
+
     #{$this}__btn
-      max-height: rem(59)
+      +visible
+
+  +notlast
+    +before
+      border-right: 1px solid #E6E6E6
+
+      position: absolute
+      z-index: 1
+      top: 0
+      right: 0
+      height: 80%
 
   &__title-wrap
     margin-bottom: rem(8)
     display: block
+    flex-grow: 1
 
   &__list
     margin-bottom: rem(20)
     display: block
+
 
   &__title
     @extend .price
@@ -33,10 +57,9 @@
 
   &__btn
     display: block
-    max-height: 0
-    overflow: hidden
+    +hidden
 
-    +tr(max-height .3s)
+    +tr(opacity .3s, visibility .3s)
 
 .plan-list
   &__item

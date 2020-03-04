@@ -1,4 +1,4 @@
-<a href="#" class="plans__item plan-item">
+<a href="#" class="plans__item plan-item{% if i.mod %} {{ i.mod }}{% endif %}">
   <span class="plan-item__title-wrap">
     <span class="plan-item__title">{{ i.title | safe }}</span>
     {% if i.subttl %}
