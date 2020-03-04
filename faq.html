@@ -19,16 +19,23 @@
             <a href="/" class="header__logo logo">
               <img class="js-lazy" alt="" src="" data-src="./img/logo.svg" />
             </a>
-            <!-- begin nav -->
-            <nav class="nav header__nav">
+            <nav class="header__nav nav">
+              <div class="nav__btns">
+                <a href="#" class="header__sign-up">
+                  <svg width="0.933em" height="1em" viewBox="0 0 14 15" class="icon icon--sign-up">
+                    <path d="M0 2.422v9.283c0 1.28.854 2.323 1.9 2.323h6.137c1.046 0 1.9-1.044 1.9-2.323v-1.503c0-.255-.168-.46-.377-.46-.208 0-.376.205-.376.46v1.503c0 .774-.517 1.406-1.15 1.406H1.9c-.633 0-1.15-.632-1.15-1.406V2.422c0-.774.517-1.406 1.15-1.406h6.137c.633 0 1.15.632 1.15 1.406v1.504c0 .254.168.46.377.46.208 0 .376-.206.376-.46V2.422C9.94 1.143 9.086.1 8.04.1H1.9C.854.1 0 1.14 0 2.422z" />
+                    <path d="M8.052 10.523a.342.342 0 01-.266.135.342.342 0 01-.266-.135L4.953 7.385a.53.53 0 010-.647L7.52 3.6c.146-.18.382-.18.529 0a.53.53 0 010 .647L6.122 6.604h7.033c.208 0 .376.205.376.46 0 .254-.168.46-.376.46h-7.03L8.052 9.88a.525.525 0 010 .643z" />
+                  </svg>
+                </a>
+                <button class="header__close close js-menu-close"></button>
+              </div>
               <ul class="nav__list">
-                <li class="nav__item "><a href="#" class="nav__link ">Sevice</a></li>
-                <li class="nav__item "><a href="#" class="nav__link ">About</a></li>
-                <li class="nav__item "><a href="#" class="nav__link ">Contacts</a></li>
-                <li class="nav__item "><a href="#" class="nav__link ">FAQ</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Sevice</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
               </ul>
             </nav>
-            <!-- end nav-->
             <div class="header__btn">
               <a href="#" class="btn btn--transp">Sign up for Free</a>
             </div>
@@ -47,8 +54,8 @@
         <section class="section s-faq-full">
           <div class="container container--md">
             <div class="s-faq-full__title-block">
-              <h2 class="section__title section__title--mb-lg title title--h2">FAQ <small>(Frequently asked questions)</small></h2>
-              <div class="section__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <h2 class="section__title section__title--mb-lg title title--h2">FAQ <small class="hidden--xs">(Frequently asked questions)</small></h2>
+              <div class="section__text text--400">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
             </div>
             <!-- begin faq -->
             <ul class="faq js-accordion">
@@ -134,8 +141,9 @@
                     </svg>
                   </a></li>
                 <li class="social__item "><a href="#" class="social__link ">
-                    <svg height="1em" width="1.000em" viewBox="0 0 56.693 56.693" class="icon icon--instagram">
-                      <path d="M43.414 4.831H13c-5.283 0-9.581 4.297-9.581 9.58v30.415c0 5.283 4.298 9.58 9.581 9.58h30.415c5.283 0 9.58-4.297 9.58-9.58V14.41c-.001-5.283-4.298-9.579-9.581-9.579zm2.748 5.713l1.096-.004v8.403l-8.375.027-.029-8.402 7.308-.024zM21.131 24.53c1.588-2.197 4.164-3.638 7.076-3.638s5.488 1.441 7.074 3.638a8.677 8.677 0 011.652 5.088c0 4.811-3.918 8.725-8.727 8.725-4.812 0-8.726-3.914-8.726-8.725a8.683 8.683 0 011.651-5.088zm27.033 20.295a4.754 4.754 0 01-4.75 4.75H13a4.755 4.755 0 01-4.751-4.75V24.53h7.4a13.483 13.483 0 00-.998 5.088c0 7.473 6.08 13.557 13.556 13.557 7.475 0 13.555-6.084 13.555-13.557 0-1.799-.361-3.516-1-5.088h7.402v20.295z" />
+                    <svg width="1.000em" height="1em" viewBox="0 0 7 7" class="icon icon--instagram">
+                      <path d="M5.105 0h-3.21C.85 0 0 .85 0 1.895v3.21C0 6.15.85 7 1.895 7h3.21C6.15 7 7 6.15 7 5.105v-3.21C7 .85 6.15 0 5.105 0zM3.5 5.414A1.916 1.916 0 011.586 3.5c0-1.055.859-1.914 1.914-1.914s1.914.859 1.914 1.914A1.916 1.916 0 013.5 5.414zm1.96-3.377a.566.566 0 110-1.132.566.566 0 010 1.132z" />
+                      <path d="M3.5 1.997c-.83 0-1.504.674-1.504 1.503 0 .83.675 1.504 1.504 1.504S5.003 4.329 5.003 3.5 4.33 1.997 3.5 1.997zM5.46 1.316a.155.155 0 100 .311.155.155 0 000-.31z" />
                     </svg>
                   </a></li>
               </ul>
