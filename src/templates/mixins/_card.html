@@ -1,0 +1,18 @@
+{% macro card(img, title, text, percent) %}
+<!-- begin card -->
+<div class="card">
+  <div class="card__img js-lazy" data-background-image="./img/cards/{{ img }}">
+    {# <img class="js-lazy" alt="" src="" data-src="./img/cards/{{ img }}"/> #}
+  </div>
+
+  <div class="card__content">
+    <div class="card__title">{{ title | safe }}</div>
+
+    <div class="card__meta">
+      <div class="card__text">{{ text or 'Change (24h)' }}</div>
+      <div class="card__percent {{ percent.mod }}">{{ percent.title | safe }}</div>
+    </div>
+  </div>
+</div>
+<!-- end card -->
+{% endmacro %}

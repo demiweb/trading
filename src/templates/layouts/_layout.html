@@ -14,13 +14,17 @@
 
     <!-- BEGIN content -->
     <div class="out{% if outClass %} {{ outClass }}{% endif %}">
+      {% if not header.isHidden %}
       {% include "partials/_header.html" %}
+      {% endif %}
       <!-- begin main -->
       <main class="main{% if mainClass %} {{ mainClass }}{% endif %}">
         {% block content %}{% endblock %}
       </main>
-      <!-- end main -->      
+      <!-- end main -->
+      {% if not footer.isHidden %}
       {% include "partials/_footer.html" %}
+      {% endif %}
     </div>
     <!-- END content -->
 
