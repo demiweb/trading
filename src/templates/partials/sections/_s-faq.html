@@ -1,18 +1,21 @@
 {%set
-questions = [
-  {
-    title: 'How Tokkia works?',
-    text: 'Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.'
-  },
-  {
-    title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-    text: 'Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.'
-  },
-  {
-    title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-    text: 'Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.'
-  }
-]
+faq = {
+  link: true,
+  questions: [
+    {
+      title: 'How Tokkia works?',
+      text: 'Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.'
+    },
+    {
+      title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+      text: 'Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.'
+    },
+    {
+      title: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+      text: 'Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.'
+    }
+  ]
+}
 %}
 
 <!-- begin section -->
@@ -20,22 +23,10 @@ questions = [
   <img class="s-faq__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_238.svg"/>
   <img class="s-faq__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_237.svg"/>
 
-  <div class="container">
+  <div class="container container--md">
     <h2 class="section__title title title--h2">F.A.Q</h2>
 
-    <!-- begin faq -->
-    <ul class="faq js-accordion">
-      {% for i in questions %}
-      <li class="faq__item faq-question">
-        <button class="faq-question__title title title--h4">{{ i.title | safe }}</button>
-        <div class="faq-question__content">{{ i.text | safe }}</div>
-      </li>
-      {% endfor %}
-      <li class="faq__item faq-question faq-question--link">
-        <a href="#" class="faq-question__title title title--h4">All questions</a>
-      </li>
-    </ul>
-    <!-- end faq -->
+    {% include "partials/_faq.html" %}
   </div>
 </section>
 <!-- end section -->
