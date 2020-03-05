@@ -1,17 +1,23 @@
-.nav
-  $this: &
-
+.nav-link
   font-size: em(16)
+  +hover
+    @extend .nav__item--current
 
   +sm
     font-size: 1em
 
+  
+.nav
+  $this: &
   &__btns
     display: flex
     align-items: center
     justify-content: space-between
 
     margin-bottom: rem(10)
+
+    +lgmin
+      display: none
 
   &__item
     display: inline-block
@@ -29,11 +35,7 @@
     +lg
       display: block
       padding: rem(7) 0
-      border-bottom: 1px solid rgba($white, .2)
-
-    +hover
-      @extend #{$this}__item--current
-
+      border-bottom: 1px solid rgba($white, .2)   
 
   &--footer
     #{$this}__list

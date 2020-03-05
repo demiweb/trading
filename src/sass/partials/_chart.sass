@@ -2,13 +2,13 @@
   position: relative
   border: 1px solid #e1e1e1
   border-radius: 5px
+
   &__top
     display: flex
     align-items: center
     justify-content: space-between
 
     border-bottom: 1px solid  $white
-
     
     padding-bottom: rem(10)
 
@@ -23,6 +23,8 @@
   &__curr
     position: relative
     overflow: hidden
+    display: flex
+
     input
       background: rgba(196, 196, 196, 0.15)
       border: 1px solid $white
@@ -35,12 +37,14 @@
       padding-left: rem(10)
       padding-right: rem(32)
       width: 121px
+
     button
       position: absolute
       z-index: 1
-      top: 50%
+      top: 1px
       right: 1px
-      transform: translate(0, -50%)
+      // transform: translate(0, -50%)
+
       height: rem(28)
       width: rem(28)
       background-color: $accent-aux
