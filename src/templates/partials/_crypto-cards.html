@@ -1,0 +1,55 @@
+<!-- begin cards -->
+<div class="cards s-crypto__cards">
+  <div class="cards__inner">
+    {% for i in range(0, 5) %}
+    {{ mixins.card(
+      mod = 'cards__item',
+      img = '01.jpg',
+      title = 'Bitcoin <span>(BTC)</span>',
+      percent = {
+        mod: 'card__percent--down',
+        title: '-0,06%'
+      }
+    ) }}
+
+    {{ mixins.card(
+      mod = 'cards__item',
+      img = '01.jpg',
+      title = 'Bitcoin <span>(BTC)</span>',
+      percent = {
+        mod: 'card__percent--up',
+        title: '+0,06%'
+      }
+    ) }}
+    {% endfor %}
+  </div>
+</div>
+<!-- end cards -->
+
+<!-- begin cards -->
+<div class="cards cards--reverse s-crypto__cards">
+  <div class="cards__inner">
+    {% for i in range(0, 5) %}
+    {{ mixins.card(
+      mod = 'cards__item',
+      img = '01.jpg',
+      title = 'Bitcoin <span>(BTC)</span>',
+      percent = {
+        mod: 'card__percent--down',
+        title: '-0,06%'
+      }
+    ) }}
+
+    {{ mixins.card(
+      mod = 'cards__item',
+      img = '01.jpg',
+      title = 'Bitcoin <span>(BTC)</span>',
+      percent = {
+        mod: 'card__percent--up',
+        title: '+0,06%'
+      }
+    ) }}
+    {% endfor %}
+  </div>
+</div>
+<!-- end cards -->

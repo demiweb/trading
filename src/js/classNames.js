@@ -1,6 +1,7 @@
 export default {
   lazy: 'js-lazy',
   header: 'js-header',
+  animEl: 'js-anim-el',
   menu: {
     burger: 'js-burger',
     menu: 'js-menu',

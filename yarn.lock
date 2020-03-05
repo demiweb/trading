@@ -5286,6 +5286,11 @@ jshint@^2.9.6:
     shelljs "0.3.x"
     strip-json-comments "1.0.x"
 
+jsmarquee@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/jsmarquee/-/jsmarquee-1.0.4.tgz#df62b40222c621f30b52e64c2afb8ed599f57ece"
+  integrity sha512-x5bTGV6w0z6DpdCF10caF7GK2W5f6j89GfeKXtoaS161qfZdBX5pSek3JFQaNguRF9QbsgHldgKN6SQp7VJ7XQ==
+
 json-content-demux@~0.1.2:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/json-content-demux/-/json-content-demux-0.1.3.tgz#5c1277bf7f3b7512a86b732ddd41b32d4dfcb1cc"

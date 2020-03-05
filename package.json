@@ -110,6 +110,7 @@
     "core-js": "^3.6.2",
     "intersection-observer": "^0.7.0",
     "js-anim": "^2.0.4",
+    "jsmarquee": "^1.0.4",
     "lozad": "^1.14.0",
     "regenerator-runtime": "^0.13.3",
     "swiper": "^5.3.6",

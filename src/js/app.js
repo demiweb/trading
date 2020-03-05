@@ -13,8 +13,8 @@ import sayHello from './lib/sayHello'
 import setHTMLClassNames from './methods/setHTMLClassNames'
 import setLazy from './methods/setLazy'
 import toggleHeader from './methods/toggleHeader'
-
 import closeMenu from './methods/closeMenu'
+import animateOnScroll from './methods/animateOnScroll'
 
 import Menu from './components/Menu/Menu'
 import Slider from './components/Slider/Slider'
@@ -51,6 +51,7 @@ class App {
       setLazy,
       closeMenu,
       toggleHeader,
+      animateOnScroll,
     }
 
     Object.values(this.methods).forEach(fn => fn(this))

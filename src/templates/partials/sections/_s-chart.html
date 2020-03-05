@@ -1,13 +1,53 @@
+{%set
+meta = [
+  {
+    title: 'Weekly Income',
+    amount: '+167.20'
+  },
+  {
+    title: 'Monthly income',
+    amount: '+167.20'
+  },
+  {
+    title: 'Daily income',
+    amount: '+167.20'
+  }
+]
+%}
+
 <!-- begin section -->
 <section class="section s-chart">
   <img class="s-chart__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_235.svg"/>
 
-  <div class="container container--md">
+  <div class="container container--md js-anim-el" data-anim-name="fadeInUp">
     <h2 class="section__title section__title--mb-lg title title--h2">Our trading results</h2>
 
     <!-- begin chart -->
     <div class="chart">
-      <img class="js-lazy" alt="" src="" data-src="./img/Rectangle_257.jpg"/>
+      <div class="chart__top">
+        <h3 class="title title--h3">Traffic</h3>
+        
+        <div class="chart__curr">
+          <input type="text" value="1 35622 (USD)">
+          <button>{{ mixins.icon('arrow') }}</button>
+        </div>
+      </div>
+
+      <img class="chart__chart js-lazy" alt="" src="" data-src="./img/Rectangle_257.jpg"/>
+
+      <div class="chart__meta chart-meta">
+        {% for i in meta %}
+        <div class="chart-meta__item chart-meta-item">
+          <div class="chart-meta-item__title">{{ i.title | safe }}</div>
+
+          <div class="chart-meta-item__amount">{{ i.amount | safe }}</div>
+
+          <div class="chart-meta-item__progress progress">
+            <div class="progress__bar" style="width: 40%;"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
     <!-- end chart -->
   </div>

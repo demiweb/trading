@@ -1,8 +1,43 @@
 .fadeIn
   animation-name: fadeIn
+.fadeInUp
+  animation-name: fadeInUp
+  animation-timing-function: $easeOutSine
 
 @keyframes fadeIn
   0%
     opacity: 0
   100%
     opacity: 1
+
+@keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translate(0, 50px)
+  100%
+    opacity: 1
+    transform: translate(0, 0)
+
+@keyframes marquee
+  0%
+    transform: translate(50vw, 0)
+  100%
+    transform: translate(-105%, 0)
+
+  +sm
+    0%
+      transform: translate(100vw, 0)
+    100%
+      transform: translate(-105%, 0)
+
+@keyframes marqueeReverse
+  0%
+    transform: translate(-100%, 0)
+  100%
+    transform: translate(50vw, 0)
+
+  +sm
+    0%
+      transform: translate(-100%, 0)
+    100%
+      transform: translate(100vw, 0)

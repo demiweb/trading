@@ -29,7 +29,7 @@ form = {
   <img class="s-contacts__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg"/>
   <div class="container">
     <div class="s-contacts__inner">
-      <div class="s-contacts__left">
+      <div class="s-contacts__left js-anim-el" data-anim-name="fadeInUp">
         <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
 
         <ol class="section-list">
@@ -40,7 +40,7 @@ form = {
       </div>
 
       <div class="s-contacts__right">
-        <div class="s-contacts__form">
+        <div class="s-contacts__form js-anim-el" data-anim-name="fadeInUp" data-anim-delay="300">
           <h3 class="section__title section__title--mb-md title title--h3">Contact us</h3>
           {% include "partials/_form.html" %}
         </div>        

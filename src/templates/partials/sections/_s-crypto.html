@@ -2,7 +2,7 @@
 <section class="section s-crypto">
   <div class="s-crypto__left">
     <div class="container">
-      <div class="s-crypto__content">
+      <div class="s-crypto__content js-anim-el" data-anim-name="fadeInUp">
         <h2 class="section__title title title--h2">Trade crypto for 24/7 on most popular exchanges.</h2>
 
         <div class="section__text">Our strategies contain Smart Algorithms & Risk Management Systems. Choose Strategy, Sum, Risks & Margin level.</div>
@@ -22,6 +22,8 @@
     <img class="s-crypto__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg"/>
   </div>
 
-  <div class="s-crypto__right"></div>
+  <div class="s-crypto__right">
+    {% include "partials/_crypto-cards.html" %}
+  </div>
 </section>
 <!-- end section -->

@@ -1,0 +1,105 @@
+.chart
+  position: relative
+  border: 1px solid #e1e1e1
+  border-radius: 5px
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    border-bottom: 1px solid  $white
+
+    
+    padding-bottom: rem(10)
+
+    position: absolute
+    z-index: 1
+    top: rem(30)
+    left: rem(30)
+    right: rem(30)
+
+    color: $white
+
+  &__curr
+    position: relative
+    overflow: hidden
+    input
+      background: rgba(196, 196, 196, 0.15)
+      border: 1px solid $white
+      border-radius: 5px
+
+      color: rgba($white, .8)
+      
+      height: rem(30)
+      font-size: em(12)
+      padding-left: rem(10)
+      padding-right: rem(32)
+      width: 121px
+    button
+      position: absolute
+      z-index: 1
+      top: 50%
+      right: 1px
+      transform: translate(0, -50%)
+      height: rem(28)
+      width: rem(28)
+      background-color: $accent-aux
+
+      border-radius: 5px
+
+      display: flex
+      align-items: center
+      justify-content: center
+
+      .icon
+        transform: scaleX(-1)
+        font-size: .5em
+
+.chart-meta
+  display: flex
+  padding-top: em(30)
+  padding-bottom: em(30)
+
+  +sm
+    font-size: 12px
+  +xs
+    font-size: 10px
+
+  &__item
+    width: 33.33333%
+    padding-left: em(30)
+    padding-right: em(30)
+    +notlast
+      border-right: 2px solid #E1E1E1
+
+    +xs
+      padding-left: em(10)
+      padding-right: em(10)
+
+.chart-meta-item
+  padding-top: em(5)
+  padding-bottom: em(5)
+  &__title
+    margin-bottom: em(10)
+
+  &__amount
+    @extend .title
+    @extend .title--h2
+    margin-bottom: em(35)
+    +xs
+      margin-bottom: em(15)
+
+.progress
+  height: 4px
+  background-color: #C4C4C4
+  border-radius: 5px
+  position: relative
+  overflow: hidden
+
+  &__bar
+    position: absolute
+    z-index: 1
+    left: 0
+    top: 0
+    bottom: 0
+    background-color: $accent-aux

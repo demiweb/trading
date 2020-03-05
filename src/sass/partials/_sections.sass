@@ -100,9 +100,20 @@
 .s-crypto
   position: relative
 
+  &__cards
+    position: relative
+    z-index: 1
+    width: 100%
+    padding-top: rem(30)
+    padding-bottom: rem(30)
+
   &__right
+    display: flex
+    justify-content: center
+    flex-direction: column
+
     position: absolute
-    z-index: 2
+    z-index: 4
     top: 0
     bottom: 0
     right: 0
@@ -128,7 +139,10 @@
 
     +sm
       position: relative
-      padding-top: 50%
+      z-index: 2
+      // padding-top: 50%
+      padding-top: rem(50)
+      padding-bottom: rem(50)
       top: auto
       bottom: auto
       right: auto

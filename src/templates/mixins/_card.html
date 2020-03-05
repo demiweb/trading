@@ -1,6 +1,6 @@
-{% macro card(img, title, text, percent) %}
+{% macro card(mod, img, title, text, percent) %}
 <!-- begin card -->
-<div class="card">
+<div class="card{% if mod %} {{ mod }}{% endif %}">
   <div class="card__img js-lazy" data-background-image="./img/cards/{{ img }}">
     {# <img class="js-lazy" alt="" src="" data-src="./img/cards/{{ img }}"/> #}
   </div>
