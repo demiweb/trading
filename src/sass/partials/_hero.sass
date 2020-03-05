@@ -7,7 +7,7 @@
   color: $white
   position: relative  
 
-  &__slide
+  &__slider
     padding-top: rem(190)
     padding-bottom: rem(126)
     position: relative
@@ -15,8 +15,25 @@
 
     +xs
       padding-top: rem(60, 14)
-      padding-bottom: rem(250, 14)
+      padding-bottom: rem(150, 14)
+    
+    .slider
+      &__prev, &__next
+        color: $white
+        margin-left: rem(10)
+        margin-right: rem(10)
+        +hover
+          color: $white
 
+  &__title-block
+    max-width: percentage(7 / 12)
+    margin-left: 0
+    margin-right: 0
+    +xs
+      max-width: none
+  
+  &__controls
+    display: flex
 
   &__title
     margin-bottom: rem(20)
@@ -56,9 +73,24 @@
 
 .hero-laptop
   text-align: right
-  &__slide
+
+  &__bg
+    position: relative
+    z-index: 0
+
+  &__slide-container
     position: absolute
+    z-index: 1
+    width: 82%
+    height: 81%
     top: 7%
     right: 0
-    z-index: 1
-    max-width: 81.5%
+
+    overflow: hidden
+
+    .swiper-container
+      height: 100%
+
+  &__slide
+    // +coverdiv
+    // object-fit: cover

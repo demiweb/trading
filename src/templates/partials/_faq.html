@@ -2,14 +2,20 @@
 <ul class="faq js-accordion">
   {% for i in faq.questions %}
   <li class="faq__item faq-question">
-    <button class="faq-question__title title title--h4">{{ i.title | safe }}</button>
-    <div class="faq-question__content">{{ i.text | safe }}</div>
+    <button class="faq-question__title title title--h4 js-accordion-btn">
+      {{ i.title | safe }}
+      <span class="faq-question__icon"></span>
+    </button>
+    <div class="faq-question__content js-accordion-item">{{ i.text | safe }}</div>
   </li>
   {% endfor %}
 
   {% if faq.link %}
   <li class="faq__item faq-question faq-question--link">
-    <a href="#" class="faq-question__title title title--h4">All questions</a>
+    <a href="#" class="faq-question__title title title--h4">
+      All questions
+      <span class="faq-question__icon"></span>
+    </a>
   </li>
   {% endif %}
 </ul>

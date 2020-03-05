@@ -1,12 +1,19 @@
 <!-- begin hero -->
 <section class="hero">
-  <div class="container">
 
-    <div class="hero__slide">     
-      
-      <h2 class="hero__title title title--h1">Hire profit making <br> algo trader who <br> works Independently</h2>
+  <div class="hero__slider slider__wrap">
+    <div class="container">      
+      <div class="hero__title-block swiper-container js-slider" data-slider="hero">
+        <div class="swiper-wrapper slider slider--hero-text">
+          {% for i in range(0, 3) %}
+              <div class="swiper-slide">
+                <h2 class="hero__title title title--h1">Hire profit making <br> algo trader who <br> works Independently</h2>
 
-      <div class="hero__subttl">Сhoose portfolio, make profit. <br> Tokkia algotrading bots will take care of everything else.</div>
+                <div class="hero__subttl">Сhoose portfolio, make profit. <br> Tokkia algotrading bots will take care of everything else.</div>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
 
       <div class="hero__btn">
         {{ mixins.btn(
@@ -15,15 +22,29 @@
         ) }}
       </div>
 
-      <div class="hero__controls">arrows</div>
-     
+      <div class="hero__controls">
+        <button class="slider__prev prev js-slider-prev">{{ mixins.icon('arr') }}</button>
+        <button class="slider__next next js-slider-next">{{ mixins.icon('arr') }}</button>
+      </div>
     </div>
-  </div>
 
-  <div class="hero__laptop hero-laptop">
-    <img class="hero-laptop__bg js-lazy" alt="" src="" data-src="./img/commp1.png"/>
-    <img class="hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg"/>
+    <div class="hero__laptop hero-laptop">
+      <img class="hero-laptop__bg js-lazy" alt="" src="" data-src="./img/commp1.png"/>
+
+      <div class="hero-laptop__slide-container">
+        <div class="swiper-container js-slider" data-slider="hero">
+          <div class="swiper-wrapper slider slider--hero-text">
+            {% for i in range(0, 3) %}
+              <img class="swiper-slide hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg"/>
+            {% endfor %}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   
   </div>
+  
 
   <img class="hero__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_51.png"/>
 

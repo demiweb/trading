@@ -24,6 +24,10 @@
     stroke: currentColor
     margin-left: .1em
 
+  &.swiper-button-disabled
+    opacity: .5
+    pointer-events: none
+
 .prev
   transform: scaleX(-1)
 
@@ -32,6 +36,29 @@
     position: relative
     *
       box-sizing: border-box
+
+  &__pagination
+    text-align: center
+    margin-top: rem(12)
+
+    .swiper-pagination-bullet
+      display: inline-block
+
+      width: rem(10)
+      height: rem(10)
+
+      border-radius: 50%
+      border: 1px solid  #dadada
+
+      margin-left: rem(4)
+      margin-right: rem(4)
+
+      cursor: pointer
+
+      &.swiper-pagination-bullet-active
+        border-color: $accent
+        background-color: $accent
+
 
   &--items
     &__wrap
@@ -42,7 +69,24 @@
 
       .slider
         &__controls
-          // position: absolute
-          // z-index: 1
-          // top: 50%
-          // transform: translate(0, -50%)
+          position: absolute
+          z-index: 1
+          top: calc(50% - #{rem(20)})
+          left: 0
+          width: 100%
+          height: 1px
+          transform: translate(0, -50%)
+
+        &__prev, &__next
+          position: absolute
+          top: 50%
+          transform: translate(0, -50%)
+
+          +lg
+            display: none
+
+        &__prev
+          left: 0
+          transform: translate(0, -50%) scaleX(-1)
+        &__next
+          right: 0

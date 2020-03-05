@@ -4,15 +4,11 @@
     &:first-child
       border-top: 1px solid currentColor
 
-.faq-question  
-  position: relative
+.faq-question
+  $this: &
 
-  +before
-    +icon-arrow(.8, .8, .07, currentColor, -45, em)
-    position: absolute
-    top: rem(20)
-    right: rem(20)
-    z-index: 1
+  position: relative
+  padding-bottom: rem(20)
   
   &__title, &__content
     padding-left: rem(20)
@@ -23,19 +19,43 @@
     +xs
       padding-left: rem(5, 14)
 
+  &__icon
+    +icon-arrow(.8, .8, .07, currentColor, -45, em)
+    position: absolute
+    top: rem(20)
+    right: rem(20)
+    z-index: 1
+
   &__title
     display: block
+    position: relative
     width: 100%
     text-align: left
 
     padding-top: rem(20)
-    padding-bottom: rem(20)
+    // padding-bottom: rem(20)
+
+    +tr(padding .4s $easeOutQuart)    
+
+    &--active
+      // padding-bottom: 0
+
+      #{$this}__icon
+        border: 0
+        transform: none
+        +icon-close(1.3em, 1px, currentColor)
+        position: absolute
+        right: rem(15)
 
   &__content
-    
+    max-height: 0
+    overflow: hidden
+    +tr(max-height .4s $easeOutQuart, margin .4s $easeOutQuart)
+    &--open
+      // margin-bottom: rem(20)    
 
   &--link
-    +before
+    #{$this}__icon
       +rotate(225)
       top: rem(24)
 

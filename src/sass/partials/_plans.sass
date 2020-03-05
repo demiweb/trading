@@ -1,7 +1,7 @@
 .plans
   display: flex
   &__item
-    width: 25%
+    width: 248px
     height: auto
 
 
@@ -18,14 +18,7 @@
   +tr(background-color .3s, color .3s)
 
   +hover
-    background-color: $accent
-    color: $white
-
-    +before
-      display: none
-
-    #{$this}__btn
-      +visible
+    @extend #{$this}.swiper-slide-active
 
   +notlast
     +before
@@ -36,6 +29,16 @@
       top: 0
       right: 0
       height: 80%
+
+  &.swiper-slide-active
+    background-color: $accent
+    color: $white
+
+    +before
+      display: none
+
+    #{$this}__btn
+      +visible
 
   &__title-wrap
     margin-bottom: rem(8)

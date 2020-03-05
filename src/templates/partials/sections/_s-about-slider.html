@@ -2,25 +2,31 @@
 <section class="section s-about">
   <div class="container container--md">
     <h2 class="section__title section__title--md title title--h2">Media about us</h2>
+  </div>
 
+  <div class="container">
     <!-- begin slider -->
     <div class="slider__wrap slider--items__wrap">
-      <div class="swiper-container js-slider" data-slider="items">
-        <div class="swiper-wrapper slider">
-          {% for i in range(0, 6) %}
-          <div class="swiper-slide slide about-item">
-            <div class="about-item__title-img">
-              <img class="js-lazy" alt="" src="" data-src="./img/image_88.png"/>
-            </div>
+      <div class="container container--md">
+        <div class="swiper-container js-slider" data-slider="items">
+          <div class="swiper-wrapper slider">
+            {% for i in range(0, 6) %}
+            <div class="swiper-slide slide about-item">
+              <div class="about-item__title-img">
+                <img class="js-lazy" alt="" src="" data-src="./img/image_88.png"/>
+              </div>
 
-            <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+              <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
 
-            <div class="about-item__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+              <div class="about-item__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+              </div>
             </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
+
+        <div class="slider__pagination js-slider-pagination"></div>     
       </div>
 
       <div class="slider__controls">
@@ -29,6 +35,6 @@
       </div>
     </div>
     <!-- end slider -->
-  </div>
+    </div>
 </section>
 <!-- end section -->

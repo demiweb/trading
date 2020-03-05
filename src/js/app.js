@@ -18,6 +18,7 @@ import closeMenu from './methods/closeMenu'
 
 import Menu from './components/Menu/Menu'
 import Slider from './components/Slider/Slider'
+import Accordion from './components/Accordion/Accordion'
 
 class App {
   constructor() {
@@ -35,6 +36,12 @@ class App {
       },
     })
     this.slider = new Slider(`.${classNames.slider.container}`)
+    this.accordion = new Accordion({
+      classNames: {
+        btn: 'faq-question__title',
+        item: 'faq-question__content',
+      },
+    })
   }
 
   initMethods() {
@@ -54,6 +61,7 @@ class App {
 
     this.menu.init()
     this.slider.init()
+    this.accordion.init()
   }
 }
 
