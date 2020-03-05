@@ -53,7 +53,7 @@
         <!-- begin hero -->
         <section class="hero">
           <div class="hero__slider slider__wrap">
-            <div class="container">
+            <div class="container js-anim-el" data-anim-name="fadeInUp">
               <div class="hero__title-block swiper-container js-slider" data-slider="hero">
                 <div class="swiper-wrapper slider slider--hero-text">
                   <div class="swiper-slide">
@@ -86,7 +86,7 @@
                 </button>
               </div>
             </div>
-            <div class="hero__laptop hero-laptop">
+            <div class="hero__laptop hero-laptop js-anim-el" data-anim-name="fadeInUp" data-anim-delay="300">
               <img class="hero-laptop__bg js-lazy" alt="" src="" data-src="./img/commp1.png" />
               <div class="hero-laptop__slide-container">
                 <div class="swiper-container js-slider" data-slider="hero">
@@ -108,7 +108,7 @@
           <div class="container">
             <!-- begin features -->
             <div class="s-features__features features">
-              <div class="features__left">
+              <div class="features__left js-anim-el" data-anim-name="fadeInUp">
                 <div class="features__block feature">
                   <div class="feature__title-wrap">
                     <div class="feature__icon">
@@ -185,7 +185,7 @@
                   <a href="#" class="btn">Sign up for Free</a>
                 </div>
               </div>
-              <div class="features__right">
+              <div class="features__right js-anim-el" data-anim-name="fadeInUp" data-anim-delay="300">
                 <div class="features__content">
                   <h2 class="section__title title title--h2">What is Tokkia</h2>
                   <div class="section__text">
@@ -205,12 +205,12 @@
         <section class="section s-imgs">
           <div class="container">
             <div class="s-imgs__inner">
-              <div class="s-imgs__left">
+              <div class="s-imgs__left js-anim-el" data-anim-name="fadeInUp">
                 <h2 class="section__title title title--h2">Algo trading without mistakes. 100% strategy, 0% competitors.</h2>
                 <div class="section__text s-imgs__text">Start your own trading using deep experience of our professional team. Different algo trading bots and strategies available without limits on top cryptoexchanges.</div>
                 <a href="#" class="btn s-imgs__btn">Sign up for Free</a>
               </div>
-              <div class="s-imgs__right">
+              <div class="s-imgs__right js-anim-el" data-anim-name="fadeInUp" data-anim-delay="300">
                 <!-- begin imgs-block -->
                 <div class="imgs-block s-imgs__imgs-block">
                   <div class="imgs-block__item imgs-item">
@@ -247,7 +247,7 @@
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-join">
-          <div class="container">
+          <div class="container js-anim-el" data-anim-name="fadeInUp">
             <h2 class="section__title section__title--mb-lg title title--h2">Join Tokkia</h2>
             <!-- begin join-blocks -->
             <div class="section__block join-blocks">
@@ -447,7 +447,7 @@
         <section class="section s-crypto">
           <div class="s-crypto__left">
             <div class="container">
-              <div class="s-crypto__content">
+              <div class="s-crypto__content js-anim-el" data-anim-name="fadeInUp">
                 <h2 class="section__title title title--h2">Trade crypto for 24/7 on most popular exchanges.</h2>
                 <div class="section__text">Our strategies contain Smart Algorithms & Risk Management Systems. Choose Strategy, Sum, Risks & Margin level.</div>
                 <a href="#" class="btn btn--white s-crypto__btn">Sign up for Free</a>
@@ -459,17 +459,324 @@
             </div>
             <img class="s-crypto__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg" />
           </div>
-          <div class="s-crypto__right"></div>
+          <div class="s-crypto__right">
+            <!-- begin cards -->
+            <div class="cards s-crypto__cards">
+              <div class="cards__inner">
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+              </div>
+            </div>
+            <!-- end cards -->
+            <!-- begin cards -->
+            <div class="cards cards--reverse s-crypto__cards">
+              <div class="cards__inner">
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--down">-0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+                <!-- begin card -->
+                <div class="card cards__item">
+                  <div class="card__img js-lazy" data-background-image="./img/cards/01.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__title">Bitcoin <span>(BTC)</span></div>
+                    <div class="card__meta">
+                      <div class="card__text">Change (24h)</div>
+                      <div class="card__percent card__percent--up">+0,06%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+              </div>
+            </div>
+            <!-- end cards -->
+          </div>
         </section>
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-chart">
           <img class="s-chart__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_235.svg" />
-          <div class="container container--md">
+          <div class="container container--md js-anim-el" data-anim-name="fadeInUp">
             <h2 class="section__title section__title--mb-lg title title--h2">Our trading results</h2>
             <!-- begin chart -->
             <div class="chart">
-              <img class="js-lazy" alt="" src="" data-src="./img/Rectangle_257.jpg" />
+              <div class="chart__top">
+                <h3 class="title title--h3">Traffic</h3>
+                <div class="chart__curr">
+                  <input type="text" value="1 35622 (USD)">
+                  <button>
+                    <svg width="2.375em" height="1em" viewBox="0 0 19 8" class="icon icon--arrow">
+                      <path d="M.646 3.646a.5.5 0 000 .708l3.182 3.182a.5.5 0 10.708-.708L1.707 4l2.829-2.828a.5.5 0 10-.708-.708L.646 3.646zM19 3.5H1v1h18v-1z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <img class="chart__chart js-lazy" alt="" src="" data-src="./img/Rectangle_257.jpg" />
+              <div class="chart__meta chart-meta">
+                <div class="chart-meta__item chart-meta-item">
+                  <div class="chart-meta-item__title">Weekly Income</div>
+                  <div class="chart-meta-item__amount">+167.20</div>
+                  <div class="chart-meta-item__progress progress">
+                    <div class="progress__bar" style="width: 40%;"></div>
+                  </div>
+                </div>
+                <div class="chart-meta__item chart-meta-item">
+                  <div class="chart-meta-item__title">Monthly income</div>
+                  <div class="chart-meta-item__amount">+167.20</div>
+                  <div class="chart-meta-item__progress progress">
+                    <div class="progress__bar" style="width: 40%;"></div>
+                  </div>
+                </div>
+                <div class="chart-meta__item chart-meta-item">
+                  <div class="chart-meta-item__title">Daily income</div>
+                  <div class="chart-meta-item__amount">+167.20</div>
+                  <div class="chart-meta-item__progress progress">
+                    <div class="progress__bar" style="width: 40%;"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- end chart -->
           </div>
@@ -477,7 +784,7 @@
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-plans">
-          <div class="container container--md">
+          <div class="container container--md js-anim-el" data-anim-name="fadeInUp">
             <h2 class="section__title section__title--mb-md title title--h2">Choose the best plan and start <br> making profit already today.</h2>
             <!-- begin slider -->
             <div class="slider__wrap slider--plans__wrap">
@@ -610,12 +917,12 @@
         <!-- end section -->
         <!-- begin section -->
         <section class="section s-about">
-          <div class="container container--md">
+          <div class="container container--md js-anim-el" data-anim-name="fadeInUp">
             <h2 class="section__title section__title--md title title--h2">Media about us</h2>
           </div>
           <div class="container">
             <!-- begin slider -->
-            <div class="slider__wrap slider--items__wrap">
+            <div class="slider__wrap slider--items__wrap js-anim-el" data-anim-name="fadeInUp">
               <div class="container container--md">
                 <div class="swiper-container js-slider" data-slider="items">
                   <div class="swiper-wrapper slider">
@@ -692,7 +999,7 @@
         <section class="section s-faq">
           <img class="s-faq__top-img js-lazy" alt="" src="" data-src="./img/Rectangle_238.svg" />
           <img class="s-faq__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_237.svg" />
-          <div class="container container--md">
+          <div class="container container--md js-anim-el" data-anim-name="fadeInUp">
             <h2 class="section__title title title--h2">F.A.Q</h2>
             <!-- begin faq -->
             <ul class="faq js-accordion">
@@ -725,7 +1032,7 @@
           <img class="s-contacts__top-img js-lazy" alt="" src="" data-src="./img/Group_10.svg" />
           <div class="container">
             <div class="s-contacts__inner">
-              <div class="s-contacts__left">
+              <div class="s-contacts__left js-anim-el" data-anim-name="fadeInUp">
                 <h2 class="section__title section__title--mb-xl title title--h2">Trade like a pro. <br> Start your trial today</h2>
                 <ol class="section-list">
                   <li class="section-list__item">
@@ -746,7 +1053,7 @@
                 </ol>
               </div>
               <div class="s-contacts__right">
-                <div class="s-contacts__form">
+                <div class="s-contacts__form js-anim-el" data-anim-name="fadeInUp" data-anim-delay="300">
                   <h3 class="section__title section__title--mb-md title title--h3">Contact us</h3>
                   <form class="form">
                     <div class="form__field">
