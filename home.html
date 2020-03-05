@@ -52,19 +52,52 @@
       <main class="main">
         <!-- begin hero -->
         <section class="hero">
-          <div class="container">
-            <div class="hero__slide">
-              <h2 class="hero__title title title--h1">Hire profit making <br> algo trader who <br> works Independently</h2>
-              <div class="hero__subttl">Сhoose portfolio, make profit. <br> Tokkia algotrading bots will take care of everything else.</div>
+          <div class="hero__slider slider__wrap">
+            <div class="container">
+              <div class="hero__title-block swiper-container js-slider" data-slider="hero">
+                <div class="swiper-wrapper slider slider--hero-text">
+                  <div class="swiper-slide">
+                    <h2 class="hero__title title title--h1">Hire profit making <br> algo trader who <br> works Independently</h2>
+                    <div class="hero__subttl">Сhoose portfolio, make profit. <br> Tokkia algotrading bots will take care of everything else.</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <h2 class="hero__title title title--h1">Hire profit making <br> algo trader who <br> works Independently</h2>
+                    <div class="hero__subttl">Сhoose portfolio, make profit. <br> Tokkia algotrading bots will take care of everything else.</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <h2 class="hero__title title title--h1">Hire profit making <br> algo trader who <br> works Independently</h2>
+                    <div class="hero__subttl">Сhoose portfolio, make profit. <br> Tokkia algotrading bots will take care of everything else.</div>
+                  </div>
+                </div>
+              </div>
               <div class="hero__btn">
                 <a href="#" class="btn">Sign up for Free</a>
               </div>
-              <div class="hero__controls">arrows</div>
+              <div class="hero__controls">
+                <button class="slider__prev prev js-slider-prev">
+                  <svg width="0.480em" height="1em" viewBox="0 0 12 25" class="icon icon--arr">
+                    <path d="M1 24l10-11.508L1 1" />
+                  </svg>
+                </button>
+                <button class="slider__next next js-slider-next">
+                  <svg width="0.480em" height="1em" viewBox="0 0 12 25" class="icon icon--arr">
+                    <path d="M1 24l10-11.508L1 1" />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="hero__laptop hero-laptop">
-            <img class="hero-laptop__bg js-lazy" alt="" src="" data-src="./img/commp1.png" />
-            <img class="hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg" />
+            <div class="hero__laptop hero-laptop">
+              <img class="hero-laptop__bg js-lazy" alt="" src="" data-src="./img/commp1.png" />
+              <div class="hero-laptop__slide-container">
+                <div class="swiper-container js-slider" data-slider="hero">
+                  <div class="swiper-wrapper slider slider--hero-text">
+                    <img class="swiper-slide hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg" />
+                    <img class="swiper-slide hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg" />
+                    <img class="swiper-slide hero-laptop__slide js-lazy" alt="" src="" data-src="./img/Slice_2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <img class="hero__bottom-img js-lazy" alt="" src="" data-src="./img/Rectangle_51.png" />
           <img class="hero__bottom-circle js-lazy" alt="" src="" data-src="./img/Group_10.svg" />
@@ -569,6 +602,7 @@
                   </a>
                 </div>
               </div>
+              <div class="slider__pagination js-slider-pagination"></div>
             </div>
             <!-- end slider -->
           </div>
@@ -578,59 +612,64 @@
         <section class="section s-about">
           <div class="container container--md">
             <h2 class="section__title section__title--md title title--h2">Media about us</h2>
+          </div>
+          <div class="container">
             <!-- begin slider -->
             <div class="slider__wrap slider--items__wrap">
-              <div class="swiper-container js-slider" data-slider="items">
-                <div class="swiper-wrapper slider">
-                  <div class="swiper-slide slide about-item">
-                    <div class="about-item__title-img">
-                      <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+              <div class="container container--md">
+                <div class="swiper-container js-slider" data-slider="items">
+                  <div class="swiper-wrapper slider">
+                    <div class="swiper-slide slide about-item">
+                      <div class="about-item__title-img">
+                        <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                      </div>
+                      <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                      <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                      </div>
                     </div>
-                    <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
-                    <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                    <div class="swiper-slide slide about-item">
+                      <div class="about-item__title-img">
+                        <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                      </div>
+                      <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                      <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide slide about-item">
-                    <div class="about-item__title-img">
-                      <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                    <div class="swiper-slide slide about-item">
+                      <div class="about-item__title-img">
+                        <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                      </div>
+                      <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                      <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                      </div>
                     </div>
-                    <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
-                    <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                    <div class="swiper-slide slide about-item">
+                      <div class="about-item__title-img">
+                        <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                      </div>
+                      <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                      <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide slide about-item">
-                    <div class="about-item__title-img">
-                      <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                    <div class="swiper-slide slide about-item">
+                      <div class="about-item__title-img">
+                        <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                      </div>
+                      <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                      <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                      </div>
                     </div>
-                    <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
-                    <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide about-item">
-                    <div class="about-item__title-img">
-                      <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
-                    </div>
-                    <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
-                    <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide about-item">
-                    <div class="about-item__title-img">
-                      <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
-                    </div>
-                    <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
-                    <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide about-item">
-                    <div class="about-item__title-img">
-                      <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
-                    </div>
-                    <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
-                    <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                    <div class="swiper-slide slide about-item">
+                      <div class="about-item__title-img">
+                        <img class="js-lazy" alt="" src="" data-src="./img/image_88.png" />
+                      </div>
+                      <h5 class="about-item__title title title--h5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h5>
+                      <div class="about-item__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo... <a href="#">read more</a>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="slider__pagination js-slider-pagination"></div>
               </div>
               <div class="slider__controls">
                 <button class="slider__prev prev js-slider-prev">
@@ -658,19 +697,23 @@
             <!-- begin faq -->
             <ul class="faq js-accordion">
               <li class="faq__item faq-question">
-                <button class="faq-question__title title title--h4">How Tokkia works?</button>
-                <div class="faq-question__content">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
+                <button class="faq-question__title title title--h4 js-accordion-btn"> How Tokkia works? <span class="faq-question__icon"></span>
+                </button>
+                <div class="faq-question__content js-accordion-item">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
               </li>
               <li class="faq__item faq-question">
-                <button class="faq-question__title title title--h4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
-                <div class="faq-question__content">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
+                <button class="faq-question__title title title--h4 js-accordion-btn"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit? <span class="faq-question__icon"></span>
+                </button>
+                <div class="faq-question__content js-accordion-item">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
               </li>
               <li class="faq__item faq-question">
-                <button class="faq-question__title title title--h4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
-                <div class="faq-question__content">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
+                <button class="faq-question__title title title--h4 js-accordion-btn"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit? <span class="faq-question__icon"></span>
+                </button>
+                <div class="faq-question__content js-accordion-item">Tokkia is a service for automatically following trades that carry out trading bots developed by our team of traders with many years of experience. The service does not require client participation, does not have access to funds, and the ability to set risk boundaries allows you to avoid major losses during trading.</div>
               </li>
               <li class="faq__item faq-question faq-question--link">
-                <a href="#" class="faq-question__title title title--h4">All questions</a>
+                <a href="#" class="faq-question__title title title--h4"> All questions <span class="faq-question__icon"></span>
+                </a>
               </li>
             </ul>
             <!-- end faq -->
