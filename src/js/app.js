@@ -65,7 +65,6 @@ class App {
     this.menu.init()
     this.slider.init()
     this.accordion.init()
-    this.marquee.init()
   }
 }
 
