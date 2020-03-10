@@ -1,11 +1,10 @@
 .nav-link
   font-size: em(16)
   +hover
-    @extend .nav__item--current
+    text-decoration: underline
 
   +sm
     font-size: 1em
-
   
 .nav
   $this: &
@@ -19,7 +18,7 @@
     +lgmin
       display: none
 
-  &__item
+  li
     display: inline-block
     +notlast
       margin-right: rem(77)
@@ -28,24 +27,27 @@
     +lg
       display: block
 
-    &--current
-      text-decoration: underline
+  &__item--current
+    text-decoration: underline      
 
-  &__link
-    +lg
-      display: block
-      padding: rem(7) 0
-      border-bottom: 1px solid rgba($white, .2)   
+  a
+    &:not(.header__sign-up)
+      @extend .nav-link
+      +lg
+        display: block
+        padding: rem(7) 0
+        border-bottom: 1px solid rgba($white, .2)   
 
   &--footer
-    #{$this}__list
+    ul
       display: flex
       flex-wrap: wrap
 
-    #{$this}__item
+    li
       margin-right: 0 !important
       width: 50%
       margin-bottom: rem(10)
 
-    #{$this}__link
+    a
       text-decoration: underline
+      

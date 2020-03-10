@@ -75,13 +75,21 @@
 
     +xs
       font-size: rem(30, 14)
-      position: static
+      position: relative
+      top: auto
+      left: auto
       margin-right: rem(9, 14)
 
-    .icon
-      font-size: rem(35)
-      +xs
-        font-size: rem(18, 14)
+    img
+      +vcenter
+      width: rem(35)
+      max-height: 100%
+      max-width: 70%
+
+    // .icon
+    //   font-size: rem(35)
+    //   +xs
+    //     font-size: rem(18, 14)
 
   &__title    
     a

@@ -62,6 +62,10 @@
     right: rem(-70)
     +xxl
       right: auto
+    +sm
+      max-width: 320px
+      margin-left: auto
+      margin-right: auto
 
   &__btn
     +sm
@@ -365,10 +369,11 @@
         background-position: 0 0
 
   &__form
-    max-width: 527px
-    margin-left: auto
+    max-width: 527px    
     position: relative
     z-index: 1
+    +smmin
+      margin-left: auto
 
   &__top-img
     position: absolute

@@ -28,7 +28,8 @@ blocks = [
         <div class="features__block feature">
           <div class="feature__title-wrap">
             <div class="feature__icon">
-              {{ mixins.icon(i.icon) }}
+              {# {{ mixins.icon(i.icon) }} #}
+              <img class="js-lazy" alt="" src="" data-src="./img/{{ i.icon }}.svg"/>
             </div>
 
             <h3 class="feature__title title title--h3">

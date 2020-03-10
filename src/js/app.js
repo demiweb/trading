@@ -15,6 +15,7 @@ import setLazy from './methods/setLazy'
 import toggleHeader from './methods/toggleHeader'
 import closeMenu from './methods/closeMenu'
 import animateOnScroll from './methods/animateOnScroll'
+import scrollTo from './methods/scrollTo'
 
 import Menu from './components/Menu/Menu'
 import Slider from './components/Slider/Slider'
@@ -52,6 +53,7 @@ class App {
       closeMenu,
       toggleHeader,
       animateOnScroll,
+      scrollTo,
     }
 
     Object.values(this.methods).forEach(fn => fn(this))
@@ -63,6 +65,7 @@ class App {
     this.menu.init()
     this.slider.init()
     this.accordion.init()
+    this.marquee.init()
   }
 }
 

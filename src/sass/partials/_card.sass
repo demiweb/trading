@@ -3,9 +3,12 @@
 
   overflow: hidden
   &__inner
-    display: flex
-    width: calc((240px + #{rem(30)}) * 10)
-    animation: marquee 25s linear infinite
+    display: inline-flex
+
+    animation-name: marquee
+    animation-duration: 50s
+    animation-timing-function: linear
+    animation-iteration-count: infinite
   &__item
     flex: 0 0 240px
     width: 240px
@@ -14,8 +17,7 @@
 
   &--reverse
     #{$this}__inner
-      animation: marqueeReverse 25s linear infinite
-
+      animation-name: marqueeReverse
 
 .card
   display: block
@@ -24,7 +26,9 @@
   box-shadow: 0px 0.665031px 6.65031px rgba(0, 0, 0, 0.1)
 
   &__img
-    +cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: contain
 
     background-color: $light
     padding-top: rem(108)
@@ -52,7 +56,7 @@
     position: relative
 
     +before
-      +arr(.5em, .5em, currentColor, t)
+      +arr(.5em, .5em, currentColor, b)
       display: inline-block
       margin-right: .3em
 
@@ -60,5 +64,5 @@
       color: #F90000
     &--up
       color: #7DC855
-
-
+      +before
+        +arr(.5em, .5em, currentColor, t)

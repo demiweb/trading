@@ -2,6 +2,8 @@ export default {
   lazy: 'js-lazy',
   header: 'js-header',
   animEl: 'js-anim-el',
+  marquee: 'js-marquee',
+  scrollTo: 'js-scroll-to',
   menu: {
     burger: 'js-burger',
     menu: 'js-menu',

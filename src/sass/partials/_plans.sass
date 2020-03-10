@@ -17,9 +17,6 @@
 
   +tr(background-color .3s, color .3s)
 
-  +hover
-    @extend #{$this}.swiper-slide-active
-
   +notlast
     +before
       border-right: 1px solid #E6E6E6
@@ -30,7 +27,7 @@
       right: 0
       height: 80%
 
-  &.swiper-slide-active
+  &:hover
     background-color: $accent
     color: $white
 

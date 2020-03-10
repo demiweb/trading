@@ -20,24 +20,24 @@
 
 @keyframes marquee
   0%
-    transform: translate(50vw, 0)
+    transform: translate(0, 0)
   100%
-    transform: translate(-105%, 0)
+    transform: translate(calc(-100% + 50vw), 0)
 
   +sm
     0%
-      transform: translate(100vw, 0)
+      transform: translate(0, 0)
     100%
-      transform: translate(-105%, 0)
+      transform: translate(calc(-100% + 100vw), 0)
 
 @keyframes marqueeReverse
   0%
-    transform: translate(-100%, 0)
+    transform: translate(calc(-100% + 50vw), 0)
   100%
-    transform: translate(50vw, 0)
+    transform: translate(0, 0)
 
   +sm
     0%
-      transform: translate(-100%, 0)
+      transform: translate(calc(-100% + 100vw), 0)
     100%
-      transform: translate(100vw, 0)
+      transform: translate(0, 0)

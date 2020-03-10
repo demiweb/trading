@@ -30,7 +30,8 @@ blocks = [
       <div class="join-blocks__block">
         <a href="#" class="join-block">
           <span class="join-block__icon">
-            {{ mixins.icon(i.icon) }}
+            {# {{ mixins.icon(i.icon) }} #}
+            <img class="js-lazy" alt="" src="" data-src="./img/{{ i.icon }}.svg"/>
           </span>          
 
           <span class="join-block__text">
