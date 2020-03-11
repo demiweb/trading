@@ -9,9 +9,12 @@
 
   &__slider
     padding-top: rem(190)
-    padding-bottom: rem(126)
+    padding-bottom: rem(50)
     position: relative
     z-index: 3
+    
+    +lg
+      padding-top: rem(120)
 
     +xs
       padding-top: rem(60, 14)
@@ -29,6 +32,8 @@
     max-width: percentage(7 / 12)
     margin-left: 0
     margin-right: 0
+    +r(1599)
+      // max-width: 50%
     +xs
       max-width: none
   
@@ -46,14 +51,20 @@
 
   &__laptop
     position: absolute
-    bottom: 0
+    bottom: rem(20)
     right: 0
     z-index: 1
     width: 42%
     min-height: 100px
-
-    +sm
+    
+    +r(1599)
       width: 50%
+    +lg
+      bottom: auto
+      top: rem(120)
+    +sm
+      top: auto
+      bottom: rem(20)
     +xs
       width: 55%
 
@@ -90,7 +101,7 @@
 
     overflow: hidden
 
-    +rmin(1460)
+    +lgmin
       width: 520px
       max-width: 82%
 
